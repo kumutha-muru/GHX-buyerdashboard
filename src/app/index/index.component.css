@@ -1,0 +1,22 @@
+.s{
+    background-color: #484848;
+    max-height: 40px;
+}
+nav {
+    background-color: #636363;
+}
+i{
+    color:white;
+}
+a:hover{
+    color: #ffbb33 !important;
+}
+i:hover{
+    color: #ffbb33 !important;
+}
+.form-control{
+    background-color:  #636363;
+}
+.form-control:focus{
+    background-color: white;
+}
