@@ -6,3 +6,26 @@
 .accordion .card-header.collapsed:after {
     content: "\f067"; 
 }
+a{
+    text-decoration: none;
+}
+.mat-row:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+.mat-row:nth-child(odd){
+    background-color:white;
+}
+table {
+    width: 70%;
+    border:1px solid black;
+  }
+  
+  th {
+    text-align: left;
+  }
+  .mat-header-cell  {
+    color: #0A0A0A;
+    font-size: medium;
+    background-color: #BFCCD3;
+  }
