@@ -27,7 +27,7 @@ import {
   MatListModule,
   MatMenuModule,
   MatNativeDateModule,
- // MatPaginatorModule,
+  MatPaginatorModule,
   MatProgressBarModule,
   MatProgressSpinnerModule,
   MatRadioModule,
@@ -39,15 +39,13 @@ import {
   MatSnackBarModule,
   MatSortModule,
   MatStepperModule,
-  //MatTableModule,
+  MatTableModule,
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
 
-import {MatPaginatorModule} from '@angular/material/paginator';
-import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({

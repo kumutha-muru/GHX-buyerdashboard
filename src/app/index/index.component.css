@@ -5,8 +5,6 @@
 }
 nav {
     background-color: #636363;
-    
-
 }
 i{
     color:white;
@@ -56,12 +54,7 @@ a:hover{
   } 
   .dropdown-content a:hover {background-color: #484848;}
   .dropdown:hover .dropdown-content {display: block;}
-
-  
-  
   .dropdown:hover .dropbtn {background-color: #484848;}
-  
-
   .dropdown:hover .dropbtn {background-color: #484848;} 
   h6{
   font-family:"Source Sans Pro" sans-serif;
@@ -70,15 +63,12 @@ a:hover{
   }
   h3{
     font-family:"Source Sans Pro" sans-serif;
-    
-
   }
   hr{
    background-color:#AAAAAA;
    height:1px;
    border:none;
   }
-
 .f{
     padding-left:15px;
     font-size: 13px;
@@ -92,9 +82,7 @@ a:hover{
   .dropdown1 {
     position: relative;
     display: inline-block;
-
-  }
-  
+  } 
   .dropdown-content1 {
      min-width:150px;
     display: none;
@@ -102,9 +90,7 @@ a:hover{
     margin-left:-80px;
     background-color: #636363;
     z-index:1;
-
   }
-  
   .dropdown-content1 a {
     color: white ;
        text-decoration: none;
@@ -114,32 +100,9 @@ a:hover{
     padding:10px 10px 10px 30px; 
 font-size:14px;
   }
-  
   .dropdown-content1 a:hover {background-color: #484848;}
-  
   .dropdown1:hover .dropdown-content1 {display: block;}
-  
   .dropdown1:hover .dropbtn1 {background-color: #484848;}
-  
-
-
-  /* [data-toggle="collapse"]:after {
-      
-    display: inline-block;
-        display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      content: "+";
-      transform: rotate(90deg) ;
-      transition: all linear 0.25s;
-      
-      }   
-    [data-toggle="collapse"].collapsed:after {
-      transform: rotate(0deg) ;
-    } */
     .navbar-nav li {
       border-right: 1px solid #636363;
       }
