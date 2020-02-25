@@ -8,10 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class IndexComponent implements OnInit {
 
   constructor() { }
-  myOptions = {
-    'placement': 'bottom'
-}
-
+  
   ngOnInit() {
   }
 

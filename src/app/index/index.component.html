@@ -1,95 +1,164 @@
 <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#"><img src="\assets\ghx_logo.jpg"/></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <a class="navbar-brand" href="#"><img src="\assets\logo.png" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav navbar-nav menu-item mr-auto">
-        <li class="nav-item"> 
-            <h3 class="text-light">Vendormate Credentialing</h3>
-          </li>
+      <li class="nav-item">
+        <h3 class="text-light">Vendormate Credentialing</h3>
+      </li>
     </ul>
     <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Brain
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>  
-          <li class="nav-item dropdown">
-<i class="fa fa-th m-3"  aria-hidden="true"></i>
-        </li>  
-<li class="nav-item dropdown">
-    <i class="nav-link fa fa-desktop mx-3 mt-2"  aria-hidden="true"></i>
-</li>
-<li class="nav-item">
-    <a class="nav-link text-light" href="">Help</a></li>
+
+
+      <li class="nav-item dropdown1">
+        <a class="nav-link dropbtn1 dropdown-toggle text-light" href="#" role="button">
+          Brain
+        </a>
+        <div class="dropdown-content1">
+          <a href="#"><i class="fa fa-user"> My Profile</i></a>
+          <a href="#" class="fa fa-power-off"> Logout</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <i class="fa fa-th m-3 " >
+        </i>
+      </li>
+
+
+      <span data-toggle="tooltip" data-placement="bottom" title="Select to review GHX System Status information">
+        <li class="nav-item  ">
+          <i class="nav-link  fa fa-desktop mx-3 mt-2"  data-toggle="modal" data-target="#myModal" aria-hidden="true"></i>
+        </li>
+      </span>
+      <!-- 
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="nav-link fa fa-desktop mx-3 mt-2"  aria-hidden="true">
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</i>
+</div> -->
+
+      <span data-toggle="tooltip" data-placement="bottom" title="Help">
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="">Help</a></li>
+      </span>
     </ul>
-</div>
+  </div>
 </nav>
 <nav class="s navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-            <a class="nav-link text-warning" href="#">Home</a>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Vendors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Reps</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Manage Users</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Reports</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Badging History</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Appoinments</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Sign-In a Rep</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Resource Center</a>
-          </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" routerLink="vendor">Vendors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Reps</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Manage Users</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Badging History</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Appoinments</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Sign-In a Rep</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Resource Center</a>
+      </li>
     </ul>
     <ul class="navbar-nav">
-        <form class="form-inline">
-           <img class="position-absolute mx-auto" src="\assets\search-dark.png"/> 
-           <span tooltip="<p>HI</p>"  placement="bottom">
-            <input class="form-control h-75" type="search" placement="bottom"  placeholder="Search for vendors & rep" aria-label="Search">
-          </span>
-         
-          
-           
-            <div class="dropdown">
-            <a class="nav-link text-light dropbtn " href="#"><i class="fa fa-cog ml-2 dropbtn"></i>Actions</a>
-            <div class="dropdown-content">
-              <h6>Sign-In Machine</h6>
-              <a href="#">Configure/Unconfigure Sign-In Machine</a>
-              <h6>Appointments</h6> 
-              <a href="#">Add Appointment</a>
-              <a href="#">Manage Vendor Permissions</a>
-              <a href="#">Manage Rep Permissions</a>
-              <a href="#">Appointment requests</a>
-              <h6>Invite a Rep</h6> 
-<a href="#">Invite a Rep</a>
-            </div>
+      <form class="form-inline">
+        <img class="position-absolute mx-auto " src="\assets\search-dark.png" />
+
+        <span tooltip="Search By:Vendor Name,Rep Name,Rep Email" placement="bottom">
+          <input class="form-control h-75 f" type="search" placeholder="Search for vendors & rep" aria-label="Search">
+        </span>
+
+
+        <div class="dropdown">
+          <a class="nav-link text-light dropbtn " href="#"><i class="fa fa-cog ml-2 dropbtn"></i>Actions</a>
+          <div class="dropdown-content">
+            <h6>Sign-In Machine</h6>
+            <a href="#">Configure/Unconfigure Sign-In Machine</a>
+            <h6>Appointments</h6>
+            <a href="#">Add Appointment</a>
+            <a href="#">Manage Vendor Permissions</a>
+            <a href="#">Manage Rep Permissions</a>
+            <a href="#">Appointment requests</a>
+            <h6>Invite a Rep</h6>
+            <a href="#">Invite a Rep</a>
           </div>
-          
-          </form>
-        </ul>
-</div>
+        </div>
+
+      </form>
+    </ul>
+  </div>
 </nav>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">GHX System Status</h4>
+        </div>  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="alert p-3 mb-2 bg-success text-white">All Systems Operational</div>
+          <h4>About This Site</h4> 
+
+          <p>Obtain information regarding the status of GHX products, including alert messages from GHX. To subscribe for alert notifications, contact GHX Customer Care at (800)-968-7449, #1. Let them know you'd like to sign up for Status Alerts, and 
+            provide which products you use so that you only get messages that are relevant to your needs. See the list of products available for alert messages below.</p>
+
+
+                </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  
+</div>
+
+<!-- <mat-form-field>
+  <mat-icon>alarm_on</mat-icon>
+  <mat-select class="alarm-dropdown" trigger="alarmTrigger" >
+    <mat-option >
+    1
+    </mat-option>
+<mat-option >
+    2
+    </mat-option>
+<mat-option >
+    3
+    </mat-option>
+
+  </mat-select>
+</mat-form-field> -->

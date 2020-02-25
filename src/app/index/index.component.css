@@ -4,6 +4,8 @@
 }
 nav {
     background-color: #636363;
+    
+
 }
 i{
     color:white;
@@ -32,13 +34,13 @@ i:hover{
   }
   
   .dropdown-content {
-      margin-top: 1px;
+      margin-top:3px;
       margin-left:-180px;
     width:260px !important;
     display: none;
-    position: absolute;
-    
+    position:absolute;
     background-color: #636363;
+    z-index:1;
     
   }
   
@@ -55,6 +57,7 @@ font-size:13px;
   
   .dropdown:hover .dropdown-content {display: block;}
   
+  
   .dropdown:hover .dropbtn {background-color: #484848;}
   
   h6{
@@ -64,9 +67,83 @@ color:#AAAAAA;
 
 
   }
+  h3{
+    font-family:"Source Sans Pro" sans-serif;
+    
+
+  }
   hr{
    background-color:#AAAAAA;
  height:1px;
  border:none;
   }
+.f{
+    padding-left:15px;
+    font-size: 13px;
+    width:200px;
+}
+.dropbtn1 {
+    color: white;
+    border: none;
+  }
   
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .dropdown-content1 {
+     min-width:150px;
+    display: none;
+    position: absolute;
+    margin-left:-80px;
+    background-color: #636363;
+    z-index:1;
+
+  }
+  
+  .dropdown-content1 a {
+    color: white ;
+       text-decoration: none;
+    display: block;
+    font-family:"Source Sans Pro" sans-serif;
+    text-align: right;
+    padding:10px 10px 10px 30px; 
+font-size:14px;
+  }
+  
+  .dropdown-content1 a:hover {background-color: #484848;}
+  
+  .dropdown1:hover .dropdown-content1 {display: block;}
+  
+  .dropdown1:hover .dropbtn1 {background-color: #484848;}
+  
+
+
+  /* [data-toggle="collapse"]:after {
+      
+    display: inline-block;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      content: "+";
+      transform: rotate(90deg) ;
+      transition: all linear 0.25s;
+      
+      }   
+    [data-toggle="collapse"].collapsed:after {
+      transform: rotate(0deg) ;
+    } */
+    .navbar-nav li {
+      border-right: 1px solid #636363;
+      }
+      .navbar-nav li:last-child {
+      border-right: none
+      }
+      p{
+        color:#AAAAAA;
+      }
