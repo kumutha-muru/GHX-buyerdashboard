@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#"><img src="\assets\logo.png" /></a>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -56,6 +57,36 @@
   </div>
 </nav>
 <nav class="s navbar navbar-expand-lg">
+
+  <ul class="nav navbar-nav menu-item mr-auto">
+    <li class="nav-item">
+      <h4 class="text-light">Vendormate Credentialing</h4>
+    </li>
+  </ul>
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Brain
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#"><i class="fa fa-th m-3" aria-hidden="true"></i></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#"><i class="nav-link fa fa-desktop mx-3 mt-2" aria-hidden="true"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light" href="">Help</a></li>
+  </ul>
+</nav>
+<nav class="navbar navbar-expand-lg secondnav">
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -67,6 +98,12 @@
       </li>
       <li class="nav-item">
         <a class="nav-link text-light" routerLink="vendor">Vendors</a>
+
+        <a class="nav-link text-warning" routerLink="/home" routerLinkActive="active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Vendors</a>
+
       </li>
       <li class="nav-item">
         <a class="nav-link text-light" href="#">Reps</a>
@@ -74,6 +111,7 @@
       <li class="nav-item">
         <a class="nav-link text-light" href="#">Manage Users</a>
       </li>
+
       <li class="nav-item">
         <a class="nav-link text-light" href="#">Reports</a>
       </li>
@@ -87,17 +125,39 @@
         <a class="nav-link text-light" href="#">Sign-In a Rep</a>
       </li>
       <li class="nav-item">
+
+      <li class="nav-item ">
+        <a class="nav-link text-light" href="#">Reports</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-light" href="#">Badging History</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-light" href="#">Appoinments</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-light" href="#">Sign-In a Rep</a>
+      </li>
+      <li class="nav-item ">
+
         <a class="nav-link text-light" href="#">Resource Center</a>
       </li>
     </ul>
     <ul class="navbar-nav">
       <form class="form-inline">
+<
         <img class="position-absolute mx-auto " src="\assets\search-dark.png" />
 
         <span tooltip="Search By:Vendor Name,Rep Name,Rep Email" placement="bottom">
           <input class="form-control h-75 f" type="search" placeholder="Search for vendors & rep" aria-label="Search">
         </span>
 
+
+
+        <img class="position-absolute mx-auto" src="\assets\search-white.png" />
+        <input class="form-control h-75 " type="search" placeholder="Search for vendors & rep" aria-label="Search">
+        <span tooltip="<p>HI</p>" placement="bottom">
+        </span>
 
         <div class="dropdown">
           <a class="nav-link text-light dropbtn " href="#"><i class="fa fa-cog ml-2 dropbtn"></i>Actions</a>
@@ -117,6 +177,7 @@
       </form>
     </ul>
   </div>
+<
 </nav>
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
@@ -162,3 +223,5 @@
 
   </mat-select>
 </mat-form-field> -->
+
+</nav>

@@ -1,6 +1,7 @@
-.s{
+.secondnav{
     background-color: #484848;
     max-height: 40px;
+    font-size: 14px;
 }
 nav {
     background-color: #636363;
@@ -13,9 +14,6 @@ i{
 a:hover{
     color: #ffbb33 !important;
 }
-i:hover{
-    color: #ffbb33 !important;
-}
 .form-control{
     background-color:  #636363;
 }
@@ -26,14 +24,12 @@ i:hover{
     color: white;
     border: none;
   }
-  
   .dropdown {
     position: relative;
     display: inline-block;
-
   }
-  
   .dropdown-content {
+
       margin-top:3px;
       margin-left:-180px;
     width:260px !important;
@@ -42,30 +38,35 @@ i:hover{
     background-color: #636363;
     z-index:1;
     
+    margin-top: 1px;
+    margin-left:-180px;
+    width:260px !important;
+    display: none;
+    position: absolute;
+    background-color: #636363; 
+
   }
-  
   .dropdown-content a {
     color: white ;
-       text-decoration: none;
+    text-decoration: none;
     display: block;
     font-family:"Source Sans Pro" sans-serif;
     padding:10px 50px 10px 25px;
-font-size:13px;
-  }
-  
+    font-size:13px;
+  } 
   .dropdown-content a:hover {background-color: #484848;}
-  
   .dropdown:hover .dropdown-content {display: block;}
+
   
   
   .dropdown:hover .dropbtn {background-color: #484848;}
   
+
+  .dropdown:hover .dropbtn {background-color: #484848;} 
   h6{
-font-family:"Source Sans Pro" sans-serif;
-font-size:14px;
-color:#AAAAAA;
-
-
+  font-family:"Source Sans Pro" sans-serif;
+  font-size:14px;
+  color:#AAAAAA;
   }
   h3{
     font-family:"Source Sans Pro" sans-serif;
@@ -74,9 +75,10 @@ color:#AAAAAA;
   }
   hr{
    background-color:#AAAAAA;
- height:1px;
- border:none;
+   height:1px;
+   border:none;
   }
+
 .f{
     padding-left:15px;
     font-size: 13px;

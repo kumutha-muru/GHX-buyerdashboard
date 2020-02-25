@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-//import {NgbModule, NgbTooltip, NgbTooltipModule} from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TooltipModule } from 'ng2-tooltip-directive';
 import { VendorComponent } from './vendor/vendor.component';
 import {
@@ -27,7 +27,7 @@ import {
   MatListModule,
   MatMenuModule,
   MatNativeDateModule,
-  MatPaginatorModule,
+ // MatPaginatorModule,
   MatProgressBarModule,
   MatProgressSpinnerModule,
   MatRadioModule,
@@ -39,22 +39,32 @@ import {
   MatSnackBarModule,
   MatSortModule,
   MatStepperModule,
-  MatTableModule,
+  //MatTableModule,
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    VendorComponent
+
+    VendorComponent,
+
+    HomeComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
+
     TooltipModule,
     MatAutocompleteModule,
     MatBadgeModule,
@@ -90,8 +100,12 @@ import {
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatTreeModule
-   // NgbModule,NgbTooltip,NgbTooltipModule
+    MatTreeModule,
+   // NgbModule,NgbTooltip,NgbTooltipModul
+    BrowserAnimationsModule,
+    TooltipModule,
+    MatPaginatorModule,
+    MatTableModule
 
   ],
   providers: [],
