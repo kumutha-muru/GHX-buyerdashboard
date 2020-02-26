@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="#"><img class="image" src="\assets\logo.png"/></a>
+  <a class="navbar-brand" href="#"><img class="image" src="\assets\logo.png" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,26 +19,28 @@
           <a href="#"><i class="fa fa-user"> My Profile</i></a>
           <a href="#" class="fa fa-power-off"> Logout</a>
         </div>
-      </li>   
+      </li>
       <li class="nav-item dropdown">
-        <a class="nav-link text-light" id="dropdownMenuButton" data-toggle="dropdown" 
-        aria-haspopup="true" aria-expanded="false" href="#"><i class="fa fa-th">
-        </i></a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-            <a class="accordion text-dark ml-1" data-toggle="collapse" data-target="#collapseOne" href="#"><b>Credentialing & Compilance</b></a>
-            <a class="dropdown-item" id="collapseOne" href="#">Credential Manager</a>
-            <a class="dropdown-item" id="collapseOne" href="#">Vendor Manager</a>
-            <a class="dropdown-item" id="collapseOne" href="#">Compliance Document Manager</a>
-            <a class="dropdown-item" id="collapseOne" href="#">Credential Manager</a>
-            <div class="dropdown-divider"></div>
-            <a class="accordion text-dark ml-1" data-toggle="collapse" data-target="#collapsetwo"  href="#"><b>Single Sign On</b></a>
-            <a class="dropdown-item"  id="collapsetwo" href="#">Home</a>
-          </div>
+        <a class="nav-link text-light" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false" href="#"><i class="fa fa-th">
+          </i></a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <a class="accordion text-dark ml-2" data-toggle="collapse" data-target="#collapseOne"
+            href="#"><b>Credentialing & Compilance</b></a>
+          <a class="dropdown-item" id="collapseOne" href="#">Credential Manager</a>
+          <a class="dropdown-item" id="collapseOne" href="#">Vendor Manager</a>
+          <a class="dropdown-item" id="collapseOne" href="#">Compliance Document Manager</a>
+          <a class="dropdown-item" id="collapseOne" href="#">Credential Manager</a>
+          <div class="dropdown-divider"></div>
+          <a class="accordion text-dark ml-2" data-toggle="collapse" data-target="#collapsetwo" href="#"><b>Single Sign
+              On</b></a>
+          <a class="dropdown-item" id="collapsetwo" href="#">Home</a>
+        </div>
       </li>
       <span data-toggle="tooltip" data-placement="bottom" title="Select to review GHX System Status information">
         <li class="nav-item  ">
-          <a href="#">  <i class="nav-link  fa fa-desktop mx-3 mt-1" data-toggle="modal" data-target="#myModal"
-            aria-hidden="true"></i></a>
+          <a href="#"> <i class="nav-link  fa fa-desktop mx-3 mt-1" data-toggle="modal" data-target="#myModal"
+              aria-hidden="true"></i></a>
         </li>
       </span>
       <span data-toggle="tooltip" data-placement="bottom" title="Help">
@@ -87,7 +89,7 @@
       <form class="form-inline">
         <img class="position-absolute mx-auto " src="\assets\search-white.png" />
         <span tooltip="Search By:Vendor Name,Rep Name,Rep Email" placement="bottom">
-          <input class="border form-control h-25 f" type="search" placeholder="Search for vendors & rep" aria-label="Search">
+          <input class="form-control" type="search" placeholder="Search for vendors & rep" aria-label="Search">
         </span>
         <div class="dropdown">
           <a class="nav-link text-light dropbtn " href="#"><i class="fa fa-cog ml-2 dropbtn"></i>Actions</a>
@@ -111,10 +113,8 @@
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-
-       <div class="modal-body">
+        <div class="modal-body">
           <br>
-          
           <br>
           <h4 class="modal-title">GHX System Status</h4>
           <br>
@@ -122,10 +122,8 @@
           <br>
           <div class="alert p-3 mb-2 bg-success text-white">All Systems Operational</div>
           <br>
-        
           <br>
           <h4>About This Site</h4>
-
           <p>Obtain information regarding the status of GHX products, including alert messages from GHX. To subscribe
             for alert notifications, contact GHX Customer Care at (800)-968-7449, #1. Let them know you'd like to sign
             up for Status Alerts, and
@@ -136,82 +134,84 @@
           <br>
           <div class="ra">Uptime over the past 60 days.<a href="#">View historical uptime.</a></div>
           <ul class="container list-group">
-            <li class="list-group-item"><span style="float: left;">Exchange <span tooltip="Tooltip" placement="top" show-delay="500"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span></span> 
+            <li class="list-group-item"><span style="float: left;">Exchange <span tooltip="Tooltip" placement="top"
+                  show-delay="500"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span></span>
               <span style="float: right;" class="text-success ml-auto">operational</span></li>
-            <li class="list-group-item"><span style="float: left;">My Exchange Provider <span tooltip="Tooltip" placement="top" show-delay="500"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span></span> 
+            <li class="list-group-item"><span style="float: left;">My Exchange Provider <span tooltip="Tooltip"
+                  placement="top" show-delay="500"><i class="fa fa-question-circle-o"
+                    aria-hidden="true"></i></span></span>
               <span style="float: right;" class="text-success ml-auto">operational</span></li>
-            <li class="list-group-item"><span style="float: left;">My Exchange Supplier <span tooltip="Tooltip" placement="top" show-delay="500"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span></span> 
+            <li class="list-group-item"><span style="float: left;">My Exchange Supplier <span tooltip="Tooltip"
+                  placement="top" show-delay="500"><i class="fa fa-question-circle-o"
+                    aria-hidden="true"></i></span></span>
               <span style="float: right;" class="text-success ml-auto">operational</span></li>
-            <li class="list-group-item"><span style="float: left;">G-Fax</span> 
+            <li class="list-group-item"><span style="float: left;">G-Fax</span>
               <span style="float: right;" class="text-success ml-auto">operational</span></li>
-              <li class="list-group-item"><span style="float: left;">Procurement Suite</span> 
-                <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                <li class="list-group-item"><span style="float: left;">Collaboration Portal</span> 
-                  <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                  <li class="list-group-item"><span style="float: left;">CCXpert</span> 
-                    <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                    <li class="list-group-item"><span style="float: left;">eInvoicing</span> 
-                      <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                      <li class="list-group-item"><span style="float: left;">Order Intelligence</span> 
-                        <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                        <li class="list-group-item"><span style="float: left;">NuVia</span> 
-                          <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                          <li class="list-group-item"><span style="float: left;">Vendormate Credentialing</span> 
-                            <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                            <li class="list-group-item"><span style="float: left;">Vendor Manager</span> 
-                              <span style="float: right;" class="text-success ml-auto">operational</span></li>              
-                              <li class="list-group-item"><span style="float: left;">Contract Manager Xpert</span> 
-                                <span style="float: right;" class="text-success ml-auto">operational</span></li>              
-                                <li class="list-group-item"><span style="float: left;">Compliance Document Manager</span> 
-                                  <span style="float: right;" class="text-success ml-auto">operational</span></li> 
-                                  <li class="list-group-item"><span style="float: left;">MetaTrade</span> 
-                                    <span style="float: right;" class="text-success ml-auto">operational</span></li> 
-                                    <li class="list-group-item"><span style="float: left;">My Exchange(New) <span tooltip="Tooltip" placement="top" show-delay="500"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span></span> 
-                                      <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                                      <li class="list-group-item"><span style="float: left;">Registratuion Center</span> 
-                                        <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                                        <li class="list-group-item"><span style="float: left;">Web Direct</span> 
-                                          <span style="float: right;" class="text-success ml-auto">operational</span></li> 
-                                          <li class="list-group-item"><span style="float: left;">Health conneXion <span tooltip="Tooltip" placement="top" show-delay="500"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span></span> 
-                                            <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                                            <li class="list-group-item"><span style="float: left;">GUDID Submission System <span tooltip="Tooltip" placement="top" show-delay="500"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span></span> 
-                                              <span style="float: right;" class="text-success ml-auto">operational</span></li>
-                                        </ul>
-                                   <br>
-                                             <br>
-                                             <br>  
-                                             
-                                     <h3>Past Incidents</h3>      
-                                         
-                                         
-                                         <br>
-                                         <h4>Feb 25,2020</h4>
-                                       <hr>
-                                       <p>No incidents reported today.</p>
-                                     <br>
-                                     <br>
-                                     
-                                       <hr>                           
-                                       <div id="expand-box3">
-                                        <div id="expand-box-header" class="clearfix">
-                                          <span style="float: left;" ><a href="#"><-Incident History</a></span> 
-                                         <span style="float: right;" class="ml-auto "><p>Powered by Statuspage</p></span>
-                                        </div>
-                                        </div>
-                                                                                                         
-
-<br>
-                                          <br>
-
+            <li class="list-group-item"><span style="float: left;">Procurement Suite</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">Collaboration Portal</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">CCXpert</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">eInvoicing</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">Order Intelligence</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">NuVia</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">Vendormate Credentialing</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">Vendor Manager</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">Contract Manager Xpert</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">Compliance Document Manager</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">MetaTrade</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">My Exchange(New) <span tooltip="Tooltip"
+                  placement="top" show-delay="500"><i class="fa fa-question-circle-o"
+                    aria-hidden="true"></i></span></span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">Registratuion Center</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">Web Direct</span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">Health conneXion <span tooltip="Tooltip"
+                  placement="top" show-delay="500"><i class="fa fa-question-circle-o"
+                    aria-hidden="true"></i></span></span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+            <li class="list-group-item"><span style="float: left;">GUDID Submission System <span tooltip="Tooltip"
+                  placement="top" show-delay="500"><i class="fa fa-question-circle-o"
+                    aria-hidden="true"></i></span></span>
+              <span style="float: right;" class="text-success ml-auto">operational</span></li>
+          </ul>
+          <br>
+          <br>
+          <br>
+          <h3>Past Incidents</h3>
+          <br>
+          <h4>Feb 25,2020</h4>
+          <hr>
+          <p>No incidents reported today.</p>
+          <br>
+          <br>
+          <hr>
+          <div id="expand-box3">
+            <div id="expand-box-header" class="clearfix">
+              <span style="float: left;"><a href="#">
+                  <-Incident History</a> </span> <span style="float: right;" class="ml-auto ">
+                    <p>Powered by Statuspage</p></span>
+            </div>
+          </div>
+          <br>
+          <br>
         </div>
-
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         </div>
-
       </div>
     </div>
-
   </div>
 </div>

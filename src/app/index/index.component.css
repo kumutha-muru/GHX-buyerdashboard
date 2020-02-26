@@ -1,6 +1,9 @@
+.image{
+  height:50px;
+}
 .secondnav{
     background-color: #484848;
-    max-height: 40px;
+    max-height: 35px;
     font-size: 14px;
 }
 nav {
@@ -15,9 +18,12 @@ a:hover{
 .fa-question-circle-o{
   color:black;
 }
-
 .form-control{
     background-color:  #636363;
+    border:none;
+    font-size: 13px;
+    width:200px;
+    height:25px;
 }
 .form-control:focus{
     background-color: white;
@@ -38,7 +44,6 @@ a:hover{
     position:absolute;
     background-color: #636363;
     z-index:1;
-    
   }
   .dropdown-content a {
     color: white ;
@@ -51,7 +56,6 @@ a:hover{
    .dropdown-content a:hover {background-color: #484848;}
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {background-color: #484848;}
-  
   h6{
   font-family:"Source Sans Pro" sans-serif;
   font-size:14px;
@@ -65,11 +69,6 @@ a:hover{
    height:1px;
    border:none;
   }
-.f{
-    padding-left:15px;
-    font-size: 13px;
-    width:200px;
-}
 .dropbtn1 {
     color: white;
     border: none;
@@ -115,10 +114,7 @@ a{
   list-style:none;
   text-decoration: none;
 }
-
-  
- .modal-dialog{
-   
+ .modal-dialog{ 
   overflow-y: initial !important
 }
 .modal-body{
@@ -134,9 +130,15 @@ h2 {
   border-bottom: 1px solid #000; 
   line-height: 0.1em;
   margin: 10px 10px 20px 10px; 
-} 
-
+}
 h2 span { 
    background:#fff; 
    padding:0 10px; 
+}
+.dropdown-item:hover {
+  color:#6699cc !important;
+}
+.accordion:hover{
+  text-decoration: none;
+  color:#6699cc !important;
 }
