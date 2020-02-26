@@ -6,12 +6,16 @@
 nav {
     background-color: #636363;
 }
-i{
+.fa{
     color:white;
 }
 a:hover{
     color: #ffbb33 !important;
 }
+.fa-question-circle-o{
+  color:black;
+}
+
 .form-control{
     background-color:  #636363;
 }
@@ -34,11 +38,7 @@ a:hover{
     position:absolute;
     background-color: #636363;
     z-index:1;
-    margin-top: 1px;
-    margin-left:-180px;
-    width:260px !important;
-    display: none;
-    position: absolute;
+    
   }
   .dropdown-content a {
     color: white ;
@@ -51,7 +51,7 @@ a:hover{
    .dropdown-content a:hover {background-color: #484848;}
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {background-color: #484848;}
-  .dropdown:hover .dropbtn {background-color: #484848;} 
+  
   h6{
   font-family:"Source Sans Pro" sans-serif;
   font-size:14px;
@@ -108,10 +108,36 @@ a:hover{
       p{
         color:#AAAAAA;
       }
-.dropdown-item:hover {
-  color:#6699cc !important;
+.ra{
+  color:#AAAAAA;
+  padding-left:360px;
 }
-.accordion:hover{
+a{
+  list-style:none;
   text-decoration: none;
-  color:#6699cc !important;
+}
+
+  
+ .modal-dialog{
+   
+  overflow-y: initial !important
+}
+.modal-body{
+  height: 430px;
+  overflow-y: auto;
+}
+.list-group-item{
+  border:1px solid #AAAAAA;
+}
+h2 {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 10px 20px 10px; 
+} 
+
+h2 span { 
+   background:#fff; 
+   padding:0 10px; 
 }
