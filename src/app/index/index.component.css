@@ -98,7 +98,6 @@ a:hover{
   .dropdown-content1 a:hover {background-color: #484848;}
   .dropdown1:hover .dropdown-content1 {display: block;}
   .dropdown1:hover .dropbtn1 {background-color: #484848;}
-
     .navbar-nav li {
       border-right: 1px solid #636363;
       }
