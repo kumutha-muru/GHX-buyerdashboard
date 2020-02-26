@@ -8,6 +8,7 @@
 }*/
 a{
     text-decoration: none;
+    color:#6699cc;
 }
 .mat-row:nth-child(even){
     background-color: #f9f9f9;
@@ -27,4 +28,7 @@ table {
     color: #0A0A0A;
     font-size: medium;
     background-color: #BFCCD3;
+  }
+  footer{
+    background-color:#636363;
   }

@@ -10,18 +10,21 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    path:'index',
-    component:IndexComponent
+    path: 'index',
+    component: IndexComponent
   },
   {
 
-    path:'vendor',
-    component:VendorComponent
+    path: 'vendor',
+    component: VendorComponent
   },
-{
-path:'',
-component:HomeComponent
-
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path:'home',
+    component:HomeComponent
   }
 ];
 

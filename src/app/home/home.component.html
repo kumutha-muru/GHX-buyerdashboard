@@ -1,5 +1,5 @@
 <app-index></app-index>
-<div class="container-fluid mt-2">
+<div class="container-fluid my-2">
   <div class="card mb-0">
     <a class="m-3" href="#">
       Recent Visitors </a>
@@ -109,7 +109,7 @@
           </nav>
           <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
           </mat-paginator></div>
-          <table mat-table [dataSource]="dataSource2" class=" mat-elevation">
+          <table mat-table [dataSource]="dataSource2" class="mb-2 mat-elevation">
             <ng-container  matColumnDef="date">
               <th mat-header-cell *matHeaderCellDef> Date </th>
               <td mat-cell *matCellDef="let element"> {{element.date}} </td>
@@ -188,4 +188,11 @@
     </div>
     </div>
     </div>
- 
+    <footer class="py-2 text-white">
+      <div class="container text-center">
+        <small>For the Privacy Terms, © 2020 Global Healthcare Exchange, LLC. All rights reserved. |
+          <a class="mx-3" href="#">Terms of use</a> | <a class="mx-3" href="#">Privacy Policy</a> | 
+          <a class="mx-3" href="#">Customer care</a> 
+        </small>
+      </div>
+    </footer>
