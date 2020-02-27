@@ -22,23 +22,23 @@
           </li>
         </ul>
       </nav>
-      <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
+      <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
       </mat-paginator></div>
       <div class="d-flex">
         <div class="col-sm-9">
-        <table mat-table [dataSource]="dataSource" class=" mat-elevation">
+        <table matSort mat-table [dataSource]="dataSource" class=" mat-elevation">
           <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef> Name </th>
-            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            <th mat-header-cell *matHeaderCellDef  mat-sort-header> Name </th>
+          <td mat-cell *matCellDef="let element"><a href="#">{{element.name}}</a> </td>
           </ng-container>
 
           <ng-container matColumnDef="company">
-            <th mat-header-cell *matHeaderCellDef> Company </th>
-            <td mat-cell *matCellDef="let element"> {{element.company}} </td>
+            <th mat-header-cell *matHeaderCellDef  mat-sort-header> Company </th>
+            <td mat-cell *matCellDef="let element"><a href="#">{{element.company}}</a> </td>
           </ng-container>
 
-          <ng-container matColumnDef="signintime">
-            <th mat-header-cell *matHeaderCellDef> Sign-In Time </th>
+          <ng-container matColumnDef="signintime" >
+            <th mat-header-cell *matHeaderCellDef  mat-sort-header> Sign-In Time </th>
             <td mat-cell *matCellDef="let element"> {{element.signintime}} </td>
           </ng-container>
 
@@ -67,27 +67,23 @@
           </nav>
           <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
           </mat-paginator></div>
-        <table mat-table [dataSource]="dataSource" class=" mat-elevation">
-          <ng-container  matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef> Name </th>
-            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-          </ng-container >
-
+        <table matSort mat-table [dataSource]="dataSource1" class=" mat-elevation">
+          
           <ng-container matColumnDef="company">
-            <th mat-header-cell *matHeaderCellDef> Company </th>
-            <td mat-cell *matCellDef="let element"> {{element.company}} </td>
+            <th mat-header-cell *matHeaderCellDef  mat-sort-header> Company </th>
+            <td mat-cell *matCellDef="let element"> <a href="#">{{element.company}}</a> </td>
           </ng-container>
 
-          <ng-container matColumnDef="signintime">
-            <th mat-header-cell *matHeaderCellDef> Sign-In Time </th>
-            <td mat-cell *matCellDef="let element"> {{element.signintime}} </td>
+          <ng-container matColumnDef="registrationdate">
+            <th mat-header-cell *matHeaderCellDef  mat-sort-header> Registration Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.registrationdate}} </td>
           </ng-container>
 
-          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
         </table>
-        <a class="m-3" href="#">
-          My Appointments </a>
+        <div class="ml-3 mt-5"><a href="#">
+          My Appointments </a></div>
           <div class="row mt-2">
             <nav class="col-sm-7 ml-3" aria-label="Page navigation">
             <ul class="pagination">
@@ -109,10 +105,10 @@
           </nav>
           <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
           </mat-paginator></div>
-          <table mat-table [dataSource]="dataSource2" class="mb-2 mat-elevation">
+          <table matSort  mat-table [dataSource]="dataSource2" class="mb-2 mat-elevation">
             <ng-container  matColumnDef="date">
-              <th mat-header-cell *matHeaderCellDef> Date </th>
-              <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+              <th mat-header-cell *matHeaderCellDef  mat-sort-header> Date </th>
+              <td mat-cell *matCellDef="let element"> <a href="#">{{element.date}}</a> </td>
             </ng-container >
   
             <ng-container matColumnDef="time">
@@ -122,7 +118,7 @@
   
             <ng-container matColumnDef="rep">
               <th mat-header-cell *matHeaderCellDef> Rep </th>
-              <td mat-cell *matCellDef="let element"> {{element.rep}} </td>
+              <td mat-cell *matCellDef="let element" class="w"><mark class="text-white bg-success">{{element.rep}}</mark>  </td>
             </ng-container>
 
             <ng-container matColumnDef="company">
@@ -141,7 +137,7 @@
             </ng-container>
 
             <ng-container matColumnDef="subject">
-              <th mat-header-cell *matHeaderCellDef> Subject </th>
+              <th mat-header-cell *matHeaderCellDef  mat-sort-header> Subject </th>
               <td mat-cell *matCellDef="let element"> {{element.subject}} </td>
             </ng-container>
 
@@ -159,23 +155,23 @@
           <div class="card-body">
             <div class="row">
               <a class="col-sm-8" href="#">Unpaid Vendors</a>
-              <div class="col-sm-3 text-right">10</div>
+              <div class="col-sm-3 text-right ml-3">10</div>
             </div>
             <div class="row">
               <a class="col-sm-8" href="#">Vendors Registered</a>
-              <div class="col-sm-3 text-right">1,230</div>
+              <div class="col-sm-3 text-right ml-3">1,230</div>
             </div>
             <div class="row">
               <a class="col-sm-8" href="#">Reps Registered</a>
-              <div class="col-sm-3 text-right">2,423</div>
+              <div class="col-sm-3 text-right ml-3">2,423</div>
             </div>
             <div class="row">
               <a class="col-sm-8" href="#">Visits in Last 30 Days</a>
-              <div class="col-sm-3 text-right">10</div>
+              <div class="col-sm-3 text-right ml-3">10</div>
             </div>
             <div class="row">
               <a class="col-sm-8" href="#">Pending Appointment Requests</a>
-              <div class="col-sm-3 text-right">5</div>
+              <div class="col-sm-3 text-right ml-3">5</div>
             </div>
           </div>
         </div>
