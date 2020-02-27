@@ -7,3 +7,18 @@
     /* symbol for "collapsed" panels */
     content: "\f067"; 
 }
+.siz{
+    border:none;
+    height:40px;
+    width:40px;
+    border-radius:5px;
+}
+.card1{
+    width: 40%;
+    height: 350px;
+    margin: 30px auto;
+  }
+  .scrollable{
+    overflow-y: auto;
+    max-height: 300px;
+  }
