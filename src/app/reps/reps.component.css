@@ -6,3 +6,31 @@
 .accordion .card-header.collapsed:after {
     content: "\f067"; 
 }
+a{
+    text-decoration: none;
+}
+.modal-dialog {
+    width: auto;
+    max-width: 600px;
+  }
+  .modal-body{
+      font-size: 14px;
+  }
+  .btn{
+      height:35px;
+  }
+  .size{
+    border:none;
+    height:40px;
+    width:40px;
+    border-radius:5px;
+}
+.card1{
+    width: 40%;
+    height: 350px;
+    margin: 30px auto;
+  }
+  .scrollable{
+    overflow-y: auto;
+    max-height: 300px;
+  }
