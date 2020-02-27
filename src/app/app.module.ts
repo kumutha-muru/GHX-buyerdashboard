@@ -45,6 +45,7 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+import { RepsComponent } from './reps/reps.component';
 
 
 
@@ -55,7 +56,9 @@ import {
 
     VendorComponent,
 
-    HomeComponent
+    HomeComponent,
+
+    RepsComponent
 
   ],
   imports: [

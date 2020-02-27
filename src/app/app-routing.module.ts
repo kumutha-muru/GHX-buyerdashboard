@@ -5,6 +5,7 @@ import { IndexComponent } from './index/index.component';
 import { VendorComponent } from './vendor/vendor.component';
 
 import { HomeComponent } from './home/home.component';
+import { RepsComponent } from './reps/reps.component';
 
 
 
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path:'home',
     component:HomeComponent
+  },
+  {
+    path:'reps',
+    component:RepsComponent
   }
 ];
 
