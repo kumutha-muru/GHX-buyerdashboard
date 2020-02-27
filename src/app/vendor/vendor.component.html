@@ -2,10 +2,10 @@
 <div class="container-fluid py-3">
   <div id="accordion" class="accordion">
     <div class="card mb-0">
-      <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+      <div class="card-header " data-toggle="collapse" href="#collapseOne">
         <a class="card-title"> Vendors </a>
       </div>
-      <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+      <div id="collapseOne" class="card-body collapse show" data-parent="#accordion">
         <span style="float:right;"><input type="checkbox"> Hide vendors with no active reps
           <span data-toggle="modal" data-target="#myModal1" class="text-primary pl-2"> Help</span></span>
         <div class="row mt-5">
@@ -37,10 +37,145 @@
         <p>Export options : <i class="fa fa-file-text-o text-info" aria-hidden="true"> CSV</i>
           <i class="fa fa-file-excel-o text-info pl-3" aria-hidden="true"> Xls</i>
           <i class="fa fa-file-pdf-o text-info pl-3" aria-hidden="true"> pdf</i></p>
+        <table class="table table-striped">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Actions</th>
+              <th scope="col">Company</th>
+              <th scope="col">Doing Business As</th>
+              <th scope="col">Requiements</th>
+              <th scope="col">Sanctions</th>
+              <th scope="col">Locations</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td><input type="text" class="pl-2" placeholder="Company"></td>
+              <td><input type="text" class="pl-2" placeholder="Doing Business As"></td>
+              <td class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>ALL</option>
+                  <option>PASS</option>
+                  <option>ALERT</option>
+                  <option>FAIL</option>
+                  <option>N/A</option>
+                </select>
+              </td>
+              <td class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>ALL</option>
+                  <option>PASS</option>
+                  <option>ALERT</option>
+                  <option>FAIL</option>
+                </select>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row" class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Select</option>
+                  <option>Add Appointment</option>
+
+                </select></th>
+              <td>Vendormate,Inc</td>
+              <td>Drug & pharmacutical products</td>
+              <td>N/A</td>
+              <td>PASS</td>
+              <td>Mayo clinic <span class="text-primary" data-toggle="modal" data-target="#myModal4">more...</span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Select</option>
+                  <option>Add Appointment</option>
+
+                </select></th>
+              <td>AB International</td>
+              <td>Drug & pharmacutical products</td>
+              <td>FAIL</td>
+              <td>PASS</td>
+              <td>Mayo clinic <span class="text-primary" data-toggle="modal" data-target="#myModal4">more...</span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Select</option>
+                  <option>Add Appointment</option>
+
+                </select></th>
+              <td>3M</td>
+              <td>Drug & pharmacutical products</td>
+              <td>PASS</td>
+              <td>PASS</td>
+              <td>Mayo clinic <span class="text-primary" data-toggle="modal" data-target="#myModal4">more...</span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Select</option>
+                  <option>Add Appointment</option>
+
+                </select></th>
+              <td>3WinsGroup LLC</td>
+              <td>Drug & pharmacutical products</td>
+              <td>N/A</td>
+              <td>PASS</td>
+              <td>Mayo clinic <span class="text-primary" data-toggle="modal" data-target="#myModal4">more...</span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Select</option>
+                  <option>Add Appointment</option>
+
+                </select></th>
+              <td>A Prime Home Care Services,LLC</td>
+              <td>Drug & pharmacutical products</td>
+              <td>PASS</td>
+              <td>PASS</td>
+              <td>Mayo clinic <span class="text-primary" data-toggle="modal" data-target="#myModal4">more...</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row mt-2">
+          <nav class="col-sm-5 ml-3" aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
+          </mat-paginator>
+          <span class="mt-2"><button type="button" class="btn btn-primary" data-toggle="modal"
+              data-target="#myModal2">Filter By Location</button></span>
+          <button class="ml-3 mt-2 siz" tooltip="clear" placement="bottom"><img src="assets/clear-filters-16.png"
+              width="15" height="15" /></button>
+
+        </div>
+
+        <p>Export options : <i class="fa fa-file-text-o text-info" aria-hidden="true"> CSV</i>
+          <i class="fa fa-file-excel-o text-info pl-3" aria-hidden="true"> Xls</i>
+          <i class="fa fa-file-pdf-o text-info pl-3" aria-hidden="true"> pdf</i></p>
       </div>
       <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
         <a class="card-title"> Manage Vendor Permissions </a>
       </div>
+
       <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
         <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
           officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
@@ -48,7 +183,147 @@
           keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
           butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
           haven't heard of them accusamus labore sustainable VHS. </p>
-      </div>
+        </div>
+      
+        <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+          <span style="float: left;"><div class="form-group ">
+            <select class="form-control w-5">
+              <option>Actions</option>
+            </select>
+          </div></span>
+        <span style="float: right;" class="text-success ml-auto"> <span data-toggle="modal" data-target="#myModal5" class="text-primary"> Help</span></span>
+       
+       
+        <div class="row mt-5">
+          <nav class="col-sm-5 ml-3" aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
+          </mat-paginator>
+          <button class="ml-3 mt-2 siz" tooltip="clear" placement="bottom"><img src="assets/clear-filters-16.png"
+              width="15" height="15" /></button>
+
+        </div>
+
+        <p>Export options : <i class="fa fa-file-text-o text-info" aria-hidden="true"> CSV</i>
+          <i class="fa fa-file-excel-o text-info pl-3" aria-hidden="true"> Xls</i>
+          <i class="fa fa-file-pdf-o text-info pl-3" aria-hidden="true"> pdf</i></p>
+       
+        <table class="table table-striped">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Have Appointment Permissions ?</th>
+              <th scope="col">Company</th>
+               <th scope="col">Doing Business As</th>
+             </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td class="form-group">
+                <select class="form-control" >
+                  <option>YES</option>
+                  <option>NO</option>
+                  
+                </select>
+              </td>
+              <td><input type="text" class="pl-2" placeholder="Company"></td>
+              <td><input type="text" class="pl-2" placeholder="Doing Business As"></td>
+              
+                       </tr>
+            <tr>
+              <th scope="row" class="form-group"><input type="checkbox">
+                </th>
+              <td></td>
+              <td>Drug & pharmacutical products</td>
+              <td>N/A</td>
+              
+            </tr>
+            <tr>
+              <th scope="row" ><input type="checkbox">
+               </th>
+              <td>AB International</td>
+              <td>Drug & pharmacutical products</td>
+              <td>FAIL</td>
+              
+            </tr>
+            <tr>
+              <th scope="row" ><input type="checkbox">
+               </th>
+              <td>3M</td>
+              <td>Drug & pharmacutical products</td>
+              <td>PASS</td>
+              
+            </tr>
+            <tr>
+              <th scope="row" ><input type="checkbox">
+                </th>
+              <td>3WinsGroup LLC</td>
+              <td>Drug & pharmacutical products</td>
+              <td>N/A</td>
+             
+            </tr>
+            <tr>
+              <th scope="row"><input type="checkbox">
+                </th>
+              <td>A Prime Home Care Services,LLC</td>
+              <td>Drug & pharmacutical products</td>
+              <td>PASS</td>
+              
+            </tr>
+          </tbody>
+        </table>
+         
+        <div class="row mt-5">
+          <nav class="col-sm-5 ml-3" aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
+          </mat-paginator>
+          <button class="ml-3 mt-2 siz" tooltip="clear" placement="bottom"><img src="assets/clear-filters-16.png"
+              width="15" height="15" /></button>
+
+        </div>
+
+        <p>Export options : <i class="fa fa-file-text-o text-info" aria-hidden="true"> CSV</i>
+          <i class="fa fa-file-excel-o text-info pl-3" aria-hidden="true"> Xls</i>
+          <i class="fa fa-file-pdf-o text-info pl-3" aria-hidden="true"> pdf</i></p>
+
+        </div>
+      
+
+
     </div>
   </div>
 </div>
@@ -69,8 +344,35 @@
     </div>
   </div>
 </div>
-<div class="modal" id="myModal2">
+
+
+
+<div class="modal" id="myModal5">
   <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Help</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        This section allows you to determine which vendors have the ability to request appointments. All vendors are defaulted to allow them to make an appointment. 
+        If you wish to restrict particular reps from making an appointment, proceed to 'Manage Rep Permissions.'
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal" id="myModal2">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <!-- Modal Header -->
       <div class="modal-header">
@@ -79,26 +381,141 @@
       </div>
       <!-- Modal body -->
       <div class="modal-body">
-        <div class="ml-3 mt-3 card card1">
-          <div class="card-body">
-            <div class="scrollable">
-              <p class="card-text">
-                Albert Lea<br>
-                Arcadia<br>
-                Arizona Mayo Clinic<br>
-                Arizona Mayo Clinic Hospital<br>
-                Arrowhead Facility<br>
-                Austin<br>
-                Beaches Primary Care Clinic<br>
-                Caledonia<br>
-                Chippewa Valley<br>
-                Eau Claire<br>
-                Fairmont<br>
-              </p>
+        <div class="d-flex">
+          <div class="ml-3 mt-3 row col-lg-5 card card1">
+            <div class="card-body">
+              <div class="scrollable">
+                <p class="card-text">
+                  Albert Lea<br>
+                  Arcadia<br>
+                  Arizona Mayo Clinic<br>
+                  Arizona Mayo Clinic Hospital<br>
+                  Arrowhead Facility<br>
+                  Austin<br>
+                  Beaches Primary Care Clinic<br>
+                  Caledonia<br>
+                  Chippewa Valley<br>
+                  Eau Claire<br>
+                  Fairmont<br>
+                  Uma<br>
+                  Kumutha<br>
+                  Sandhya<br>
+                  Ajith<br>
+                  Surendran<br>
+                  Sangeetha<br>
+                  Vijay
+                </p>
+              </div>
             </div>
           </div>
-        </div>        
+
+        </div>      
+          <div class="mr-2 mt-5">
+            <button class="siz btn-primary text-white">></button>
+
+            <br>
+            <button class="siz mt-2 btn-primary text-white">
+              <</button> <br>
+                <button class="siz mt-2 btn-primary text-white">>></button><br>
+                <button class="siz mt-2 btn-primary text-white">
+                  <<</button> </div> <div class="ml-3 mt-3 row col-lg-5 card card1">
+                    <div class="card-body">
+                      <div class="scrollable">
+                        <p class="card-text">
+
+                        </p>
+                      </div>
+                    </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn btn-success  text-center">Ok</a>
+          <a type="button" class="btn  btn-warning text-white ml-3" data-dismiss="modal">Cancel</a>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+<div class="modal" id="myModal4">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Locations</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row mt-5">
+          <nav class="col-sm-5 ml-3" aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
+          </mat-paginator>
+        </div>
+        <ul class="container list-group ml-3">
+          <li class="list-group-item list-group-item-secondary font-weight-bold">Locations</li>
+          <li class="list-group-item ">Caledonia</li>
+          <li class="list-group-item ">Mayo Clinic Minnesota</li>
+          <li class="list-group-item ">Mayo Clinic Specialities Building</li>
+        </ul>
+        <div class="row mt-2">
+          <nav class="col-sm-5 ml-3" aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
+          </mat-paginator>
+        </div>
+
       </div>
     </div>
   </div>
 </div>
+<footer class="py-2 text-white">
+  <div class="container text-center">
+    <small>For the Privacy Terms, © 2020 Global Healthcare Exchange, LLC. All rights reserved. |
+      <a class="mx-3" href="#">Terms of use</a> | <a class="mx-3" href="#">Privacy Policy</a> | 
+      <a class="mx-3" href="#">Customer care</a> 
+    </small>
+  </div>
+</footer>

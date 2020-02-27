@@ -14,11 +14,14 @@
     border-radius:5px;
 }
 .card1{
-    width: 40%;
+    width:20%;
     height: 350px;
     margin: 30px auto;
   }
   .scrollable{
     overflow-y: auto;
     max-height: 300px;
+  }
+  footer{
+    background-color:#636363;
   }
