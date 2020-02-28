@@ -1,0 +1,39 @@
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+.siz{
+    border:none;
+    height:40px;
+    width:40px;
+    border-radius:5px;
+}
+.card1{
+    width:20%;
+    height: 350px;
+    margin: 30px auto;
+    border:none;
+  }
+  .scrollable{
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  footer{
+    background-color:#636363;
+  }
+  .modal-lg {
+    max-width: 95% !important;
+}
+.modal-dialog{ 
+  overflow-y: initial !important
+}
+.modal-body{
+  height: 430px;
+  overflow-y: auto;
+}
+

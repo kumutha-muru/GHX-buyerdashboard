@@ -46,6 +46,8 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import { RepsComponent } from './reps/reps.component';
+import { ManageusersComponent } from './manageusers/manageusers.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -58,7 +60,11 @@ import { RepsComponent } from './reps/reps.component';
 
     HomeComponent,
 
-    RepsComponent
+    RepsComponent,
+
+    ManageusersComponent,
+
+    ProfileComponent
 
   ],
   imports: [

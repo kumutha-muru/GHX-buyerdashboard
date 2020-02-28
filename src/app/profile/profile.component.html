@@ -1,0 +1,348 @@
+<app-index></app-index>
+<div class="container-fluid py-3">
+  <div id="accordion" class="accordion">
+    <div class="card mb-0">
+      <div class="card-header " data-toggle="collapse" href="#collapseOne">
+        <a class="card-title"> Manage Users </a>
+      </div>
+      <div id="collapseOne" class="card-body collapse show" data-parent="#accordion">
+         <span style="float: left;">User Status
+          <select class="form-control w-5">
+                 <option>Active Users</option>
+                 <option>Inactive Users</option>
+
+            </select>
+          </span>
+        <span style="float: right;" class="text-success ml-auto"> <span class="mt-2"><button type="button" class="btn btn-primary" data-toggle="modal"
+            data-target="#myModal6">Create New User</button></span></span>
+        <div class="row mt-5">
+          <nav class="col-sm-5 ml-3" aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
+          </mat-paginator>
+         
+          <button class="ml-3 mt-2 siz" tooltip="clear" placement="bottom"><img src="assets/clear-filters-16.png"
+              width="15" height="15" /></button>
+        </div>
+        
+        <table class="table table-striped">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Actions</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Admin Role</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td><input type="text" class="pl-2" placeholder="First Name"></td>
+              <td><input type="text" class="pl-2" placeholder="Last Name"></td>
+              <td><input type="text" class="pl-2" placeholder="Email"></td>
+
+              <td class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>ALL</option>
+                  <option>YES</option>
+                  <option>NO</option>
+                  
+                </select>
+              </td>
+                          </tr>
+            <tr>
+              <th scope="row" class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Select</option>
+                  <option>Add Appointment</option>
+                </select></th>
+              <td>Vendormate,Inc</td>
+              <td>Drug & pharmacutical products</td>
+              <td>N/A</td>
+              <td>PASS</td>
+            </tr>
+            <tr>
+              <th scope="row" class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Select</option>
+                  <option>Add Appointment</option>
+                </select></th>
+              <td>AB International</td>
+              <td>Drug & pharmacutical products</td>
+              <td>FAIL</td>
+              <td>PASS</td>
+            </tr>
+            <tr>
+              <th scope="row" class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Select</option>
+                  <option>Add Appointment</option>
+                </select></th>
+              <td>3M</td>
+              <td>Drug & pharmacutical products</td>
+              <td>PASS</td>
+              <td>PASS</td>
+            </tr>
+            <tr>
+              <th scope="row" class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Select</option>
+                  <option>Add Appointment</option>
+                </select></th>
+              <td>3WinsGroup LLC</td>
+              <td>Drug & pharmacutical products</td>
+              <td>N/A</td>
+              <td>PASS</td>
+            </tr>
+            <tr>
+              <th scope="row" class="form-group">
+                <select class="form-control" id="sel1" name="sellist1">
+                  <option>Select</option>
+                  <option>Add Appointment</option>
+                </select></th>
+              <td>A Prime Home Care Services,LLC</td>
+              <td>Drug & pharmacutical products</td>
+              <td>PASS</td>
+              <td>PASS</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row mt-2">
+          <nav class="col-sm-5 ml-3" aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
+          </mat-paginator>
+          
+          <button class="ml-3 mt-2 siz" tooltip="clear" placement="bottom"><img src="assets/clear-filters-16.png"
+              width="15" height="15" /></button>
+        </div>
+        
+      </div>
+</div>
+</div>
+<div class="modal" id="myModal6">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Create New User</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="d-flex">
+          <div class="ml-3 mt-3 row col-lg-5 card card1">
+            <div class="card-body">
+                
+                  <form>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-6 col-form-label text-right">UserID(Email)</label>
+                      <div class="col-sm-6 ">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="User ID(Email)">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Salutation</label>
+                      <div class="col-sm-6">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Salutation">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">First Name</label>
+                      <div class="col-sm-6">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="First Name">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Middle Name                       
+                      <span  tooltip="Enter Users Middle Name" placement="bottom"><i  class="fa fa-question-circle" aria-hidden="true"></i></span>
+                      </label>
+
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="Middle Name">
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">No Middle Name                       
+                      <span  tooltip="Enter Users Middle Name" placement="bottom"><i  class="fa fa-question-circle" aria-hidden="true"></i></span>
+                      </label>
+                      <div class="col-sm-6 mt-2">
+
+                      <input type="checkbox">
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Last Name</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="Last Name">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Title                      
+                      <span  tooltip="Enter Users Middle Name" placement="bottom"><i  class="fa fa-question-circle" aria-hidden="true"></i></span>
+                      </label>
+                      <div class="col-sm-6">
+
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="Title">
+                      </div>
+                    </div>
+                       
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">No Title                     
+                      <span  tooltip="Enter Users Middle Name" placement="bottom"><i  class="fa fa-question-circle" aria-hidden="true"></i></span>
+                      </label>
+                      <div class="col-sm-6 mt-2">
+
+                      <input type="checkbox">
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Work Phone                      
+                      </label>
+
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="work phone">
+                      </div>
+                    </div>
+                  
+                  </form>    
+                
+              </div>
+            </div>
+          
+                  <div class="ml-3 mt-3 row col-lg-5 card card1">
+                    <div class="card-body">
+                      <form>
+                        <div class="form-group row">
+                          <label for="inputEmail3" class="col-sm-6 col-form-label text-right">Cell Phone</label>
+                          <div class="col-sm-6 ">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Cell Phone">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Fax</label>
+                          <div class="col-sm-6">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Fax">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Default Location/Facility</label>
+                          <div class="col-sm-6">
+                            <select name="cars" class="custom-select">
+                              <option selected></option>
+                              <option value="volvo">Volvo</option>
+                              <option value="fiat">Fiat</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                                                    </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Default Entry Point</label>
+                          <div class="col-sm-6">
+                            <select name="cars" class="custom-select">
+                              <option selected></option>
+                              <option value="volvo">Volvo</option>
+                              <option value="fiat">Fiat</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                                                    </div>
+                        </div> 
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Auto Print Badge                      
+                          </label>
+                          <div class="col-sm-6 mt-2">
+    
+                          <input type="checkbox">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Available for Appointment                     
+                          </label>
+                          <div class="col-sm-6 mt-2">
+    
+                          <input type="checkbox">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">
+                            Receive Email Upon Appointment Request                     
+                          </label>
+                          <div class="col-sm-6 mt-3">
+    
+                          <input type="checkbox">
+                          </div>
+                        </div>
+                       
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">
+                            Receive Email Upon Appointment Sign In?                     
+                          </label>
+                          <div class="col-sm-6 mt-3">
+    
+                          <input type="checkbox">
+                          </div>
+                        </div>
+                       
+
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Admin Role                      
+                          </label>
+                          <div class="col-sm-6 mt-2">
+    
+                          <input type="checkbox">
+                          </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center mb-4">
+                          <a href="#" class="btn btn-success  text-center">Save</a>
+                          <a type="button" class="btn  btn-warning text-white ml-3" data-dismiss="modal">Cancel</a>
+                        </div>
+                      </form>    
+    
+                      </div>
+                  
+          </div>
+        </div>
+        
+      </div>
+      
+      </div>
+    </div>
+  </div>

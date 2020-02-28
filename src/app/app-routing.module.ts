@@ -6,6 +6,8 @@ import { VendorComponent } from './vendor/vendor.component';
 
 import { HomeComponent } from './home/home.component';
 import { RepsComponent } from './reps/reps.component';
+import { ManageusersComponent } from './manageusers/manageusers.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -30,7 +32,15 @@ const routes: Routes = [
   {
     path:'reps',
     component:RepsComponent
-  }
+  },
+  {
+    path:'manage',
+    component:ManageusersComponent
+  },
+  {
+    path:'profile',
+    component:ProfileComponent
+  } 
 ];
 
 @NgModule({
