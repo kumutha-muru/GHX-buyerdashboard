@@ -192,23 +192,25 @@
                       </div>
                       <div class="modal-body">
                         <div class="row ml-2">
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </li>
-                        </ul>
-                        <mat-paginator class="ml-5" [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
-                        </mat-paginator></div>
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </li>
+                          </ul>
+                          <mat-paginator class="ml-5" [length]="100" [pageSize]="5"
+                            [pageSizeOptions]="[5, 10, 30, 100]">
+                          </mat-paginator>
+                        </div>
                         <ul class="container list-group ">
                           <li class="list-group-item list-group-item-secondary font-weight-bold">Locations</li>
                           <li class="list-group-item ">Rochester - Methodist Hospital</li>
@@ -216,256 +218,428 @@
                           <li class="list-group-item ">Rochester Methodist Hospital</li>
                         </ul>
                         <div class="row ml-2">
-            <ul class="pagination mt-2">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </li>
-            </ul>
-            <mat-paginator class="ml-5" [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
-            </mat-paginator>
+                          <ul class="pagination mt-2">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </li>
+                          </ul>
+                          <mat-paginator class="ml-5" [length]="100" [pageSize]="5"
+                            [pageSizeOptions]="[5, 10, 30, 100]">
+                          </mat-paginator>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><select class="custom-select">
+                  <option value="0">Select</option>
+                  <option value="1">Block</option>
+                  <option value="2">Add Appointment</option>
+                  <option value="3">Block/Unblock History</option>
+                  <option value="4">CBC Report</option>
+                </select></th>
+              <td><a href="#">
+                  Brain</a></td>
+              <td><a href="#">King</a></td>
+              <td><a href="#">Medicare Center</a></td>
+              <td>(404) 920-3132</td>
+              <td><a href="#">tina.johansen@vendormate.com</a></td>
+              <td class="text-danger">FAIL</td>
+              <td class="text-success">PASS</td>
+              <td>Arcadia, Rochester - <a href="#" data-toggle="modal" data-target="#exampleModalm">
+                  more...</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><select class="custom-select">
+                  <option value="0">Select</option>
+                  <option value="1">Block</option>
+                  <option value="2">Add Appointment</option>
+                  <option value="3">Block/Unblock History</option>
+                  <option value="4">CBC Report</option>
+                </select></th>
+              <td><a href="#">
+                  Cary</a></td>
+              <td><a href="#">Sudfeld</a></td>
+              <td><a href="#">Eads & Associates</a></td>
+              <td>(486)708-7152</td>
+              <td><a href="#">Cary_Sudfeld@Eads.com</a></td>
+              <td class="text-success">PASS</td>
+              <td class="text-success">PASS</td>
+              <td>Florida St. Augustin<a href="#" data-toggle="modal" data-target="#exampleModalm">
+                  more...</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><select class="custom-select">
+                  <option value="0">Select</option>
+                  <option value="1">Block</option>
+                  <option value="2">Add Appointment</option>
+                  <option value="3">Block/Unblock History</option>
+                  <option value="4">CBC Report</option>
+                </select></th>
+              <td><a href="#">
+                  Brigette</a></td>
+              <td><a href="#">Thomas</a></td>
+              <td><a href="#">Consultative Medical Solutions</a></td>
+              <td>(415)637-7081</td>
+              <td><a href="#">Brigette_Thomas@Consultative.com</a></td>
+              <td class="text-success">PASS</td>
+              <td class="text-success">PASS</td>
+              <td>Mayo Clinic Arizona, <a href="#" data-toggle="modal" data-target="#exampleModalm">
+                  more...</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><select class="custom-select">
+                  <option value="0">Select</option>
+                  <option value="1">Block</option>
+                  <option value="2">Add Appointment</option>
+                  <option value="3">Block/Unblock History</option>
+                  <option value="4">CBC Report</option>
+                </select></th>
+              <td><a href="#">
+                  Braxton</a></td>
+              <td><a href="#">Troup</a></td>
+              <td><a href="#">Braxton_Troup@Codonics.com</a></td>
+              <td>(398)620-7064</td>
+              <td><a href="#">rep21automation@vendormate.vm</a></td>
+              <td class="text-danger">FAIL</td>
+              <td class="text-success">PASS</td>
+              <td>Florida Mayo Clinic <a href="#" data-toggle="modal" data-target="#exampleModalm">
+                  more...</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><select class="custom-select">
+                  <option value="0">Select</option>
+                  <option value="1">Block</option>
+                  <option value="2">Add Appointment</option>
+                  <option value="3">Block/Unblock History</option>
+                  <option value="4">CBC Report</option>
+                </select></th>
+              <td><a href="#">
+                  Alger</a></td>
+              <td><a href="#">Woodward</a></td>
+              <td><a href="#">AHI Software, Inc.</a></td>
+              <td>(176)398-6842</td>
+              <td><a href="#">Alger_Woodward@AHI.com</a></td>
+              <td class="text-success">PASS</td>
+              <td class="text-success">PASS</td>
+              <td>Arizona Mayo Clinic, <a href="#" data-toggle="modal" data-target="#exampleModalm">
+                  more...</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><select class="custom-select">
+                  <option value="0">Select</option>
+                  <option value="1">Block</option>
+                  <option value="2">Add Appointment</option>
+                  <option value="3">Block/Unblock History</option>
+                  <option value="4">CBC Report</option>
+                </select></th>
+              <td><a href="#">
+                  Bernie</a></td>
+              <td><a href="#">Walk</a></td>
+              <td><a href="#">Cardiotronic Osypka Medical, Inc.</a></td>
+              <td>(339)561-7005</td>
+              <td><a href="#">Bernie_Walk@Cardiotronic.com</a></td>
+              <td class="text-warning">ALERT</td>
+              <td class="text-success">PASS</td>
+              <td>Albert Lea, Rocheste<a href="#" data-toggle="modal" data-target="#exampleModalm">
+                  more...</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><select class="custom-select">
+                  <option value="0">Select</option>
+                  <option value="1">Block</option>
+                  <option value="2">Add Appointment</option>
+                  <option value="3">Block/Unblock History</option>
+                  <option value="4">CBC Report</option>
+                </select></th>
+              <td><a href="#">Barney</a></td>
+              <td><a href="#">Ward</a></td>
+              <td><a href="#">Brackmann Medical</a></td>
+              <td>(308)530-6974</td>
+              <td><a href="#">Barney_Ward@Brackmann.com</a></td>
+              <td class="text-danger">FAIL</td>
+              <td class="text-success">PASS</td>
+              <td>Rochester - 201, Roc<a href="#" data-toggle="modal" data-target="#exampleModalm">
+                  more...</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><select class="custom-select">
+                  <option value="0">Select</option>
+                  <option value="1">Block</option>
+                  <option value="2">Add Appointment</option>
+                  <option value="3">Block/Unblock History</option>
+                  <option value="4">CBC Report</option>
+                </select></th>
+              <td><a href="#">Barbara</a></td>
+              <td><a href="#">Warsing</a></td>
+              <td><a href="#">Boston Home Infusion Inc.</a></td>
+              <td>(305)527-6971</td>
+              <td><a href="#">Barbara_Warsing@Boston.com</a></td>
+              <td class="text-success">PASS</td>
+              <td class="text-success">PASS</td>
+              <td>Fountain Hills Facil <a href="#" data-toggle="modal" data-target="#exampleModalm">
+                  more...</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"><select class="custom-select">
+                  <option value="0">Select</option>
+                  <option value="1">Block</option>
+                  <option value="2">Add Appointment</option>
+                  <option value="3">Block/Unblock History</option>
+                  <option value="4">CBC Report</option>
+                </select></th>
+              <td><a href="#">
+                  badreddine</a></td>
+              <td><a href="#">Washington</a></td>
+              <td><a href="#">BMC LLC</a></td>
+              <td>(301)523-6967</td>
+              <td><a href="#">badreddine_Washington@BMC.com</a></td>
+              <td class="text-warning">ALERT</td>
+              <td class="text-success">PASS</td>
+              <td>Caledonia, Mayo Clin <a href="#" data-toggle="modal" data-target="#exampleModalm">
+                  more...</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row ml-1">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+          <p class="ml-3 mt-1">Export options:</p>
+          <a href="#"><i class="fa fa-file-text-o text-info ml-2 mt-2" aria-hidden="true"> CSV</i></a>
+          <a href="#"><i class="fa fa-file-excel-o text-info pl-3 mt-2" aria-hidden="true"> Xls</i></a>
+          <a href="#"><i class="fa fa-file-pdf-o text-info pl-3 mt-2" aria-hidden="true"> pdf</i></a>
+          <button class="ml-auto size " tooltip="clear" placement="bottom">
+            <img class="ml-auto" src="\assets\clear-filters-16.png" width="15" height="15" /></button>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
+          </mat-paginator>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="accordion" class="accordion mt-2">
+    <div class="card">
+      <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+        <a class="card-title">
+          Manage Rep Permissions
+        </a>
+      </div>
+      <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+        <div class="row ml-1 mb-2">
+          <select class="col-sm-2">
+            <option value="0">Actions</option>
+          </select>
+          <a class="ml-auto mr-4" href="#" data-toggle="modal" data-target="#exampleModal1">
+            <p>Help</p>
+          </a></div>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                This section allows you to determine at the rep level which reps are allowed
+                and not allowed to initiate an appointment. All reps are defaulted to allow them to
+                make an appointment.
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="row ml-1">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+          <button class="ml-auto size" tooltip="clear" placement="bottom">
+            <img class="ml-auto" src="\assets\clear-filters-16.png" width="15" height="15" /></button>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
+          </mat-paginator>
+        </div>
+        <table class="table  table-sm table-bordered">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Have Appointment Permissions?</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Company</th>
+              <th scope="col">User Id/Email Address</th>
+            </tr>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col"><select class="custom-select">
+                  <option value="0">Yes</option>
+                  <option value="1">No</option>
+                </select></th>
+              <th scope="col"><input type="text" placeholder="first Name" /></th>
+              <th scope="col"><input type="text" placeholder="Last Name" /></th>
+              <th scope="col"><input type="text" placeholder="Company" /></th>
+              <th scope="col"><input type="text" placeholder="User Id/Email Address" /></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Yes</td>
+              <td><i class="fa fa-exclamation-triangle text-danger mr-1"></i>Anupama</td>
+              <td>kaple</td>
+              <td>CROCKER INDUSTRIES-docRGR</td>
+              <td>ak164220@test.vm</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Yes</td>
+              <td>Anupama</td>
+              <td>kaple</td>
+              <td>Health care center</td>
+              <td>ak115455@test.vm</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Yes</td>
+              <td>Anupama</td>
+              <td>kaple</td>
+              <td>Health care center</td>
+              <td>ak100357@test.vm</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Yes</td>
+              <td>Anupama</td>
+              <td>kaple</td>
+              <td>Health care center</td>
+              <td>ak100357@test.vm</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Yes</td>
+              <td><i class="fa fa-exclamation-triangle text-danger mr-1"></i>Anupama</td>
+              <td>kaple</td>
+              <td>Hospitality of Macon</td>
+              <td>ak182120@test.vm</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Yes</td>
+              <td>anushka</td>
+              <td>anushka</td>
+              <td>J&J</td>
+              <td>anushka@j.com.vm</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Yes</td>
+              <td>Anupama</td>
+              <td>kaple</td>
+              <td>Hospitality_Of_Macon_20_MAY</td>
+              <td>ak111726@test.vm</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Yes</td>
+              <td><i class="fa fa-exclamation-triangle text-danger mr-1"></i> ap</td>
+              <td>pt</td>
+              <td>tata</td>
+              <td>appt@hll.com</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Yes</td>
+              <td><i class="fa fa-exclamation-triangle text-danger mr-1"></i>arul</td>
+              <td>kumar</td>
+              <td>KM Inc</td>
+              <td>arul@km.com</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Yes</td>
+              <td>arul</td>
+              <td>Jain</td>
+              <td>AroJain Inv</td>
+              <td>aj@arojain.com</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row ml-1">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+          <button class="ml-auto size" tooltip="clear" placement="bottom">
+            <img class="ml-auto" src="\assets\clear-filters-16.png" width="15" height="15" /></button>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
+          </mat-paginator>
+        </div>
       </div>
     </div>
   </div>
 </div>
-</td>
-</tr>
-<tr>
-  <th scope="row"><select class="custom-select">
-    <option value="0">Select</option>
-    <option value="1">Block</option>
-    <option value="2">Add Appointment</option>
-    <option value="3">Block/Unblock History</option>
-    <option value="4">CBC Report</option>
-  </select></th>
-<td><a href="#">	
-  Brain</a></td>
-<td><a href="#">King</a></td>
-<td><a href="#">Medicare Center</a></td>
-<td>(404) 920-3132</td>
-<td><a href="#">tina.johansen@vendormate.com</a></td>
-<td class="text-danger">FAIL</td>
-<td class="text-success">PASS</td>
-<td>Arcadia, Rochester - <a href="#" data-toggle="modal" data-target="#exampleModalm">
-    more...</a>
-</td>
-</tr>
-<tr>
-  <th scope="row"><select class="custom-select">
-    <option value="0">Select</option>
-    <option value="1">Block</option>
-    <option value="2">Add Appointment</option>
-    <option value="3">Block/Unblock History</option>
-    <option value="4">CBC Report</option>
-  </select></th>
-<td><a href="#">	
- 	Cary</a></td>
-<td><a href="#">Sudfeld</a></td>
-<td><a href="#">Eads & Associates</a></td>
-<td>(486)708-7152</td>
-<td><a href="#">Cary_Sudfeld@Eads.com</a></td>
-<td class="text-success">PASS</td>
-<td class="text-success">PASS</td>
-<td>Florida St. Augustin<a href="#" data-toggle="modal" data-target="#exampleModalm">
-    more...</a>
-</td>
-</tr>
-<tr>
-  <th scope="row"><select class="custom-select">
-    <option value="0">Select</option>
-    <option value="1">Block</option>
-    <option value="2">Add Appointment</option>
-    <option value="3">Block/Unblock History</option>
-    <option value="4">CBC Report</option>
-  </select></th>
-<td><a href="#">	
-  Brigette</a></td>
-<td><a href="#">Thomas</a></td>
-<td><a href="#">Consultative Medical Solutions</a></td>
-<td>(415)637-7081</td>
-<td><a href="#">Brigette_Thomas@Consultative.com</a></td>
-<td class="text-success">PASS</td>
-<td class="text-success">PASS</td>
-<td>Mayo Clinic Arizona, <a href="#" data-toggle="modal" data-target="#exampleModalm">
-    more...</a>
-</td>
-</tr>
-<tr>
-  <th scope="row"><select class="custom-select">
-    <option value="0">Select</option>
-    <option value="1">Block</option>
-    <option value="2">Add Appointment</option>
-    <option value="3">Block/Unblock History</option>
-    <option value="4">CBC Report</option>
-  </select></th>
-<td><a href="#">	
-  Braxton</a></td>
-<td><a href="#">Troup</a></td>
-<td><a href="#">Braxton_Troup@Codonics.com</a></td>
-<td>(398)620-7064</td>
-<td><a href="#">rep21automation@vendormate.vm</a></td>
-<td class="text-danger">FAIL</td>
-<td class="text-success">PASS</td>
-<td>Florida Mayo Clinic <a href="#" data-toggle="modal" data-target="#exampleModalm">
-    more...</a>
-</td>
-</tr>
-<tr>
-  <th scope="row"><select class="custom-select">
-    <option value="0">Select</option>
-    <option value="1">Block</option>
-    <option value="2">Add Appointment</option>
-    <option value="3">Block/Unblock History</option>
-    <option value="4">CBC Report</option>
-  </select></th>
-<td><a href="#">	
-  Alger</a></td>
-<td><a href="#">Woodward</a></td>
-<td><a href="#">AHI Software, Inc.</a></td>
-<td>(176)398-6842</td>
-<td><a href="#">Alger_Woodward@AHI.com</a></td>
-<td class="text-success">PASS</td>
-<td class="text-success">PASS</td>
-<td>Arizona Mayo Clinic, <a href="#" data-toggle="modal" data-target="#exampleModalm">
-    more...</a>
-</td>
-</tr>
-<tr>
-  <th scope="row"><select class="custom-select">
-    <option value="0">Select</option>
-    <option value="1">Block</option>
-    <option value="2">Add Appointment</option>
-    <option value="3">Block/Unblock History</option>
-    <option value="4">CBC Report</option>
-  </select></th>
-<td><a href="#">	
-Bernie</a></td>
-<td><a href="#">Walk</a></td>
-<td><a href="#">Cardiotronic Osypka Medical, Inc.</a></td>
-<td>(339)561-7005</td>
-<td><a href="#">Bernie_Walk@Cardiotronic.com</a></td>
-<td class="text-warning">ALERT</td>
-<td class="text-success">PASS</td>
-<td>Albert Lea, Rocheste<a href="#" data-toggle="modal" data-target="#exampleModalm">
-    more...</a>
-</td>
-</tr>
-<tr>
-  <th scope="row"><select class="custom-select">
-    <option value="0">Select</option>
-    <option value="1">Block</option>
-    <option value="2">Add Appointment</option>
-    <option value="3">Block/Unblock History</option>
-    <option value="4">CBC Report</option>
-  </select></th>
-<td><a href="#">Barney</a></td>
-<td><a href="#">Ward</a></td>
-<td><a href="#">Brackmann Medical</a></td>
-<td>(308)530-6974</td>
-<td><a href="#">Barney_Ward@Brackmann.com</a></td>
-<td class="text-danger">FAIL</td>
-<td class="text-success">PASS</td>
-<td>Rochester - 201, Roc<a href="#" data-toggle="modal" data-target="#exampleModalm">
-    more...</a>
-</td>
-</tr>
-<tr>
-  <th scope="row"><select class="custom-select">
-    <option value="0">Select</option>
-    <option value="1">Block</option>
-    <option value="2">Add Appointment</option>
-    <option value="3">Block/Unblock History</option>
-    <option value="4">CBC Report</option>
-  </select></th>
-<td><a href="#">Barbara</a></td>
-<td><a href="#">Warsing</a></td>
-<td><a href="#">Boston Home Infusion Inc.</a></td>
-<td>(305)527-6971</td>
-<td><a href="#">Barbara_Warsing@Boston.com</a></td>
-<td class="text-success">PASS</td>
-<td class="text-success">PASS</td>
-<td>Fountain Hills Facil <a href="#" data-toggle="modal" data-target="#exampleModalm">
-    more...</a>
-</td>
-</tr>
-<tr>
-  <th scope="row"><select class="custom-select">
-    <option value="0">Select</option>
-    <option value="1">Block</option>
-    <option value="2">Add Appointment</option>
-    <option value="3">Block/Unblock History</option>
-    <option value="4">CBC Report</option>
-  </select></th>
-<td><a href="#">	
-  badreddine</a></td>
-<td><a href="#">Washington</a></td>
-<td><a href="#">BMC LLC</a></td>
-<td>(301)523-6967</td>
-<td><a href="#">badreddine_Washington@BMC.com</a></td>
-<td class="text-warning">ALERT</td>
-<td class="text-success">PASS</td>
-<td>Caledonia, Mayo Clin <a href="#" data-toggle="modal" data-target="#exampleModalm">
-    more...</a>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="row ml-1">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </li>
-  </ul>
-  <p class="ml-3 mt-1">Export options:</p>
-  <a href="#"><i class="fa fa-file-text-o text-info ml-2 mt-2" aria-hidden="true"> CSV</i></a>
-  <a href="#"><i class="fa fa-file-excel-o text-info pl-3 mt-2" aria-hidden="true"> Xls</i></a>
-  <a href="#"><i class="fa fa-file-pdf-o text-info pl-3 mt-2" aria-hidden="true"> pdf</i></a>
-  <button class="ml-auto size " tooltip="clear" placement="bottom">
-    <img class="ml-auto" src="\assets\clear-filters-16.png" width="15" height="15" /></button>
-  <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
-  </mat-paginator>
-</div>
-</div>
-</div>
-</div>
-<div id="accordion" class="accordion mt-2">
-  <div class="card">
-    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-      <a class="card-title">
-        Manage Rep Permissions
-      </a>
-    </div>
-    <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
-      <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-        officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-        moon tempor, sunt
-        aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-        lomo. Leggings occaecat
-        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-        labore sustainable VHS.
-      </p>
-    </div>
+<footer class="py-2 text-white">
+  <div class="container text-center">
+    <small>For the Privacy Terms, © 2020 Global Healthcare Exchange, LLC. All rights reserved. |
+      <a class="mx-3" href="#">Terms of use</a> | <a class="mx-3" href="#">Privacy Policy</a> | 
+      <a class="mx-3" href="#">Customer care</a> 
+    </small>
   </div>
-</div>
-</div>
+</footer>
