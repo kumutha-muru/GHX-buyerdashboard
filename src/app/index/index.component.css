@@ -12,6 +12,9 @@ nav {
 .fa{
     color:white;
 }
+.class-name{
+  color: #ffbb33 !important;
+}
 a:hover{
     color: #ffbb33 !important;
 }
