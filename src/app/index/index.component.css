@@ -106,6 +106,9 @@ a:hover{
       .navbar-nav li:last-child {
       border-right: none
       }
+      .bl{
+        border-left: 1px solid #636363;
+      }
       p{
         color:#AAAAAA;
       }

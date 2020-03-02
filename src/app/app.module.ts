@@ -48,6 +48,8 @@ import {
 import { RepsComponent } from './reps/reps.component';
 import { ManageusersComponent } from './manageusers/manageusers.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ReplistComponent } from './replist/replist.component';
+import { ReportsComponent } from './reports/reports.component';
 
 
 
@@ -64,7 +66,11 @@ import { ProfileComponent } from './profile/profile.component';
 
     ManageusersComponent,
 
-    ProfileComponent
+    ProfileComponent,
+
+    ReplistComponent,
+
+    ReportsComponent
 
   ],
   imports: [
