@@ -8,7 +8,7 @@ import { ManageusersComponent } from './manageusers/manageusers.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ReplistComponent } from './replist/replist.component';
 import { ReportsComponent } from './reports/reports.component';
-
+import { BadginghistoryComponent } from './badginghistory/badginghistory.component';
 const routes: Routes = [
   {
     path: 'index',
@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path:'reports',
     component:ReportsComponent
+  } ,
+  {
+    path:'badge',
+    component:BadginghistoryComponent
   }
 ];
 

@@ -50,8 +50,7 @@ import { ManageusersComponent } from './manageusers/manageusers.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ReplistComponent } from './replist/replist.component';
 import { ReportsComponent } from './reports/reports.component';
-
-
+import { BadginghistoryComponent } from './badginghistory/badginghistory.component';
 
 @NgModule({
   declarations: [
@@ -68,9 +67,10 @@ import { ReportsComponent } from './reports/reports.component';
 
     ProfileComponent,
 
-    ReplistComponent,
+ReplistComponent,
 
-    ReportsComponent
+    ReportsComponent,
+    BadginghistoryComponent
 
   ],
   imports: [

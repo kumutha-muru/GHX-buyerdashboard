@@ -1,0 +1,38 @@
+.wmd-view-topscroll, .wmd-view {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 1350px;
+    border: none 0px RED;
+}
+
+.wmd-view-topscroll { height: 20px; }
+.wmd-view { height: 500px; }
+.scroll-div1 { 
+    width: 2000px; 
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height:20px;
+}
+.scroll-div2 { 
+    width: 2000px; 
+    height:20px;
+}
+/* fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.75em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px solid black;
+  } */
+  .accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
