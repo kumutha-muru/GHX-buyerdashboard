@@ -145,3 +145,34 @@ h2 span {
   text-decoration: none;
   color:#6699cc !important;
 }
+/* .footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+ 
+    background-color:#636363;
+}
+body{
+  position:relative;
+  min-height: 100%;
+margin:0;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.hi{
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 640px;
+  max-height:700px;
+  height:90%;
+  width: 94%;
+} */

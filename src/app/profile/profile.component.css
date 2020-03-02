@@ -23,9 +23,7 @@
     overflow-y: auto;
     max-height: 300px;
   }
-  footer{
-    background-color:#636363;
-  }
+  
   .modal-lg {
     max-width: 95% !important;
 }
@@ -37,3 +35,6 @@
   overflow-y: auto;
 }
 
+#menu1{
+  min-height:600px;
+} 

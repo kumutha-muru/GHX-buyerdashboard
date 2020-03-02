@@ -48,6 +48,7 @@ import {
 import { RepsComponent } from './reps/reps.component';
 import { ManageusersComponent } from './manageusers/manageusers.component';
 import { ProfileComponent } from './profile/profile.component';
+import { BadginghistoryComponent } from './badginghistory/badginghistory.component';
 
 
 
@@ -64,7 +65,9 @@ import { ProfileComponent } from './profile/profile.component';
 
     ManageusersComponent,
 
-    ProfileComponent
+    ProfileComponent,
+
+    BadginghistoryComponent
 
   ],
   imports: [
