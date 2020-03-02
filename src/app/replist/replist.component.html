@@ -1,27 +1,44 @@
 <app-index></app-index>
 <a href="#" class="m-3" routerLink="/reps">back to Rep List</a>
-<fieldset class="scheduler-border">
+<div class="d-flex  justify-content-around">
+<fieldset class="col-sm-5 scheduler-border">
   <legend class="scheduler-border">Rep Info</legend>
-  <h5 class="ml-1">Tina Johansen</h5>
-  <div>
+  <h5 class="ml-2">Tina Johansen</h5>
+<div class="d-flex">
+  <div class="col-sm-10">
   <div class="row">
-     <label class="col-sm-2"><b>Employer</b></label>
-    <a class="col-sm-3" href="#">Vendormate, Inc</a></div>
+     <label class="col-sm-4"><b>Employer</b></label>
+    <a class="col-sm-6" href="#">Vendormate, Inc</a></div>
  <div class="row">
-  <label class="col-sm-2"><b>Email</b></label>
-  <p class="col-sm-3">tina.johansen@vendormate.com</p>
+  <label class="col-sm-4"><b>Email</b></label>
+  <p class="col-sm-6">tina.johansen@vendormate.com</p>
  </div>
 <div class="row">
-  <label class="col-sm-2"><b>Phone</b></label>
-  <p class="col-sm-3"> 404-995-4768</p>
+  <label class="col-sm-4"><b>Phone</b></label>
+  <p class="col-sm-6"> 404-995-4768</p>
 </div>  
 <div class="row">
-  <label class="col-sm-2"><b>Title</b></label>
-  <p class="col-sm-3">Manager, Sales Development</p>
+  <label class="col-sm-4"><b>Title</b></label>
+  <p class="col-sm-6">Manager, Sales Development</p>
 </div>
  <div class="row">
-  <label class="col-sm-2"><b>Vendor Tier Level</b></label>
-  <p class="col-sm-3"> High</p>
+  <label class="col-sm-4"><b>Vendor Tier Level</b></label>
+  <p class="col-sm-4"> High</p>
  </div>
- <img src="\assets\badgePhoto.jpeg"/></div>
+<a href="#" class="text-right">Badging History</a></div>
+ <div class="col-sm-3">
+ <img class="w-auto" src="\assets\badgePhoto.jpeg"/></div></div>
 </fieldset>
+<fieldset class="col-sm-3 scheduler-border">
+  <legend class="scheduler-border">Score Card Rating</legend>
+  <a href="#" class="ml-5">36 reviews</a>
+</fieldset>
+<fieldset class="col-sm-3 scheduler-border">
+  <legend class="scheduler-border">Compliance Status</legend>
+   <div class="row ml-2"><b>Sanction Status</b>
+    <p class="text-success ml-5">PASS</p></div>
+    <div class="row ml-2"><b> Requirements Status</b>
+      <p class="text-danger ml-3">FAIL</p></div>
+</fieldset>
+</div>
+
