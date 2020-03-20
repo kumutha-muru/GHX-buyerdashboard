@@ -1,0 +1,41 @@
+{
+    "VisionResponse": {
+        "RegistrationSummaryList": [
+            {
+                "createdOn": "Jun 20, 2016 01:30 AM",
+                "vendorOid": "c010000dd2a00000dd2c",
+                "legalName": "Vendormate, Inc",
+                "vendorDetailURL": "http://mayoclinic:8080/vm/login.do?key=rO0ABXQAUGJ1eWVyX21heW9AbW9va2FtYmlrYWluZm8uY29tOmRkMDE5ZDI1NThmNmU3MDgzNzAzMzk1MGRiZmU1ODdhOkJ1eWVyRGFzaDpkZXRhaWxz&vendorOid=c010000dd2a00000dd2c&subTab=info",
+                "updateAction": false,
+                "deleteAction": false
+            },
+            {
+                "createdOn": "Jun 20, 2016 01:15 AM",
+                "vendorOid": "c010000dd2a00000dd2b",
+                "legalName": "Medicare Center",
+                "vendorDetailURL": "http://mayoclinic:8080/vm/login.do?key=rO0ABXQAUGJ1eWVyX21heW9AbW9va2FtYmlrYWluZm8uY29tOmRkMDE5ZDI1NThmNmU3MDgzNzAzMzk1MGRiZmU1ODdhOkJ1eWVyRGFzaDpkZXRhaWxz&vendorOid=c010000dd2a00000dd2b&subTab=info",
+                "updateAction": false,
+                "deleteAction": false
+            },
+            {
+                "createdOn": "Jun 20, 2016 01:15 AM",
+                "vendorOid": "c010000dd2a00000dd2b",
+                "legalName": "First Response Ambulatory Services",
+                "vendorDetailURL": "http://mayoclinic:8080/vm/login.do?key=rO0ABXQAUGJ1eWVyX21heW9AbW9va2FtYmlrYWluZm8uY29tOmRkMDE5ZDI1NThmNmU3MDgzNzAzMzk1MGRiZmU1ODdhOkJ1eWVyRGFzaDpkZXRhaWxz&vendorOid=c010000dd2a00000dd2b&subTab=info",
+                "updateAction": false,
+                "deleteAction": false
+            },
+            {
+                "createdOn": "Jun 20, 2016 01:30 AM",
+                "vendorOid": "c010000dd2a00000dd2c",
+                "legalName": "Smart Devices Inc",
+                "vendorDetailURL": "http://mayoclinic:8080/vm/login.do?key=rO0ABXQAUGJ1eWVyX21heW9AbW9va2FtYmlrYWluZm8uY29tOmRkMDE5ZDI1NThmNmU3MDgzNzAzMzk1MGRiZmU1ODdhOkJ1eWVyRGFzaDpkZXRhaWxz&vendorOid=c010000dd2a00000dd2c&subTab=info",
+                "updateAction": false,
+                "deleteAction": false
+            }
+        ],
+        "Status": "Ok",
+        "totalRecords": 4,
+        "contentType": "application/json"
+    }
+}

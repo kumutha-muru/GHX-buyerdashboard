@@ -6,374 +6,251 @@
         <a class="card-title"> Badging History </a>
       </div>
       <div id="collapseOne" class="card-body collapse show" data-parent="#accordion">
-        
-        <div class="row mt-2">
-          <nav class="col-sm-5 ml-3" aria-label="Page navigation">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
+        <div class="row ml-1">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+          <p class="ml-3 mt-1">Export options:</p>
+          <a href="#"><i class="fa fa-file-text-o text-info ml-2 mt-2" aria-hidden="true"> CSV</i></a>
+          <a href="#"><i class="fa fa-file-excel-o text-info pl-3 mt-2" aria-hidden="true"> Xls</i></a>
+          <a href="#"><i class="fa fa-file-pdf-o text-info pl-3 mt-2" aria-hidden="true"> pdf</i></a>
+          <button class="ml-auto size" tooltip="clear" placement="bottom">
+            <img src="\assets\clear-filters-16.png" width="15" height="15" /></button>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
           </mat-paginator>
-         
-          <button class="ml-3 mt-2 siz" tooltip="clear" placement="bottom"><img src="assets/clear-filters-16.png"
-              width="15" height="15" /></button>
         </div>
-        <p>Export options : <i class="fa fa-file-text-o text-info" aria-hidden="true"> CSV</i>
-            <i class="fa fa-file-excel-o text-info pl-3" aria-hidden="true"> Xls</i>
-            <i class="fa fa-file-pdf-o text-info pl-3" aria-hidden="true"> pdf</i></p>
-        <div class="wmd-view-topscroll">
-            <div class="scroll-div1">
-            </div>
-        </div>
-        <div class="wmd-view">
-            <div class="scroll-div2">
-        
-        <table class="table table-striped">
-          <thead class="thead-light">
-            <tr>
-              <th scope="col">Actions</th>
-              <th scope="col">First Name</th>
-              <th scope="col">Last Name</th>
-              <th scope="col">Email</th>
-              <th scope="col">Admin Role</th>
-              
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"></th>
-              <td><input type="text" class="pl-2" placeholder="First Name"></td>
-              <td><input type="text" class="pl-2" placeholder="Last Name"></td>
-              <td><input type="text" class="pl-2" placeholder="Email"></td>
-
-              <td class="form-group">
-                <select class="form-control" id="sel1" name="sellist1">
-                  <option>ALL</option>
-                  <option>YES</option>
-                  <option>NO</option>
-                  
-                </select>
-              </td>
-                          </tr>
-            <tr>
-              <th scope="row" class="form-group">
-                <select class="form-control" id="sel1" name="sellist1">
-                  <option>Select</option>
-                  <option>Add Appointment</option>
-                </select></th>
-              <td>Vendormate,Inc</td>
-              <td>Drug & pharmacutical products</td>
-              <td>N/A</td>
-              <td>PASS</td>
-            </tr>
-            <tr>
-              <th scope="row" class="form-group">
-                <select class="form-control" id="sel1" name="sellist1">
-                  <option>Select</option>
-                  <option>Add Appointment</option>
-                </select></th>
-              <td>AB International</td>
-              <td>Drug & pharmacutical products</td>
-              <td>FAIL</td>
-              <td>PASS</td>
-            </tr>
-            <tr>
-              <th scope="row" class="form-group">
-                <select class="form-control" id="sel1" name="sellist1">
-                  <option>Select</option>
-                  <option>Add Appointment</option>
-                </select></th>
-              <td>3M</td>
-              <td>Drug & pharmacutical products</td>
-              <td>PASS</td>
-              <td>PASS</td>
-            </tr>
-            <tr>
-              <th scope="row" class="form-group">
-                <select class="form-control" id="sel1" name="sellist1">
-                  <option>Select</option>
-                  <option>Add Appointment</option>
-                </select></th>
-              <td>3WinsGroup LLC</td>
-              <td>Drug & pharmacutical products</td>
-              <td>N/A</td>
-              <td>PASS</td>
-            </tr>
-            <tr>
-              <th scope="row" class="form-group">
-                <select class="form-control" id="sel1" name="sellist1">
-                  <option>Select</option>
-                  <option>Add Appointment</option>
-                </select></th>
-              <td>A Prime Home Care Services,LLC</td>
-              <td>Drug & pharmacutical products</td>
-              <td>PASS</td>
-              <td>PASS</td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-        </div>
-        <div class="row mt-2">
-          <nav class="col-sm-5 ml-3" aria-label="Page navigation">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 25, 100]">
-          </mat-paginator>
-          
-          <button class="ml-3 mt-2 siz" tooltip="clear" placement="bottom"><img src="assets/clear-filters-16.png"
-              width="15" height="15" /></button>
-        </div>
-        <p>Export options : <i class="fa fa-file-text-o text-info" aria-hidden="true"> CSV</i>
-            <i class="fa fa-file-excel-o text-info pl-3" aria-hidden="true"> Xls</i>
-            <i class="fa fa-file-pdf-o text-info pl-3" aria-hidden="true"> pdf</i></p>
+        <div id="wrapper1">
+          <div id="div1">
+          </div>
       </div>
-</div>
-</div>
-<div class="modal" id="myModal6">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Create New User</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <!-- Modal body -->
-      <div class="modal-body">
-        <div class="d-flex">
-          <div class="ml-3 mt-3 row col-lg-5 card card1">
-            <div class="card-body">
-                
-                  <form>
-                    <div class="form-group row">
-                      <label for="inputEmail3" class="col-sm-6 col-form-label text-right">UserID(Email)</label>
-                      <div class="col-sm-6 ">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="User ID(Email)">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Salutation</label>
-                      <div class="col-sm-6">
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="Salutation">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">First Name</label>
-                      <div class="col-sm-6">
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="First Name">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Middle Name                       
-                      <span  tooltip="Enter Users Middle Name" placement="bottom"><i  class="fa fa-question-circle" aria-hidden="true"></i></span>
-                      </label>
-
-                      <div class="col-sm-6">
-                        <input type="text" class="form-control" id="inputPassword3" placeholder="Middle Name">
-                      </div>
-                    </div>
-                    
-                    <div class="form-group row">
-                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">No Middle Name                       
-                      <span  tooltip="Enter Users Middle Name" placement="bottom"><i  class="fa fa-question-circle" aria-hidden="true"></i></span>
-                      </label>
-                      <div class="col-sm-6 mt-2">
-
-                      <input type="checkbox">
-                      </div>
-                    </div>
-                    
-                    <div class="form-group row">
-                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Last Name</label>
-                      <div class="col-sm-6">
-                        <input type="text" class="form-control" id="inputPassword3" placeholder="Last Name">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Title                      
-                      <span  tooltip="Enter Users Middle Name" placement="bottom"><i  class="fa fa-question-circle" aria-hidden="true"></i></span>
-                      </label>
-                      <div class="col-sm-6">
-
-                        <input type="text" class="form-control" id="inputPassword3" placeholder="Title">
-                      </div>
-                    </div>
-                       
-                    <div class="form-group row">
-                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">No Title                     
-                      <span  tooltip="Enter Users Middle Name" placement="bottom"><i  class="fa fa-question-circle" aria-hidden="true"></i></span>
-                      </label>
-                      <div class="col-sm-6 mt-2">
-
-                      <input type="checkbox">
-                      </div>
-                    </div>
-                    
-                    <div class="form-group row">
-                      <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Work Phone                      
-                      </label>
-
-                      <div class="col-sm-6">
-                        <input type="text" class="form-control" id="inputPassword3" placeholder="work phone">
-                      </div>
-                    </div>
-                  
-                  </form>    
-                
-              </div>
-            </div>
-          
-                  <div class="ml-3 mt-3 row col-lg-5 card card1">
-                    <div class="card-body">
-                      <form>
-                        <div class="form-group row">
-                          <label for="inputEmail3" class="col-sm-6 col-form-label text-right">Cell Phone</label>
-                          <div class="col-sm-6 ">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Cell Phone">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Fax</label>
-                          <div class="col-sm-6">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Fax">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Default Location/Facility</label>
-                          <div class="col-sm-6">
-                            <select name="cars" class="custom-select">
-                              <option selected></option>
-                              <option value="volvo">Volvo</option>
-                              <option value="fiat">Fiat</option>
-                              <option value="audi">Audi</option>
-                            </select>
-                                                    </div>
-                        </div>
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Default Entry Point</label>
-                          <div class="col-sm-6">
-                            <select name="cars" class="custom-select">
-                              <option selected></option>
-                              <option value="volvo">Volvo</option>
-                              <option value="fiat">Fiat</option>
-                              <option value="audi">Audi</option>
-                            </select>
-                                                    </div>
-                        </div> 
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Auto Print Badge                      
-                          </label>
-                          <div class="col-sm-6 mt-2">
-    
-                          <input type="checkbox">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Available for Appointment                     
-                          </label>
-                          <div class="col-sm-6 mt-2">
-    
-                          <input type="checkbox">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">
-                            Receive Email Upon Appointment Request                     
-                          </label>
-                          <div class="col-sm-6 mt-3">
-    
-                          <input type="checkbox">
-                          </div>
-                        </div>
-                       
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">
-                            Receive Email Upon Appointment Sign In?                     
-                          </label>
-                          <div class="col-sm-6 mt-3">
-    
-                          <input type="checkbox">
-                          </div>
-                        </div>
-                       
-
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-6 col-form-label text-right">Admin Role                      
-                          </label>
-                          <div class="col-sm-6 mt-2">
-    
-                          <input type="checkbox">
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-center mb-4">
-                          <a href="#" class="btn btn-success  text-center">Save</a>
-                          <a type="button" class="btn  btn-warning text-white ml-3" data-dismiss="modal">Cancel</a>
-                        </div>
-                      </form>    
-    
-                      </div>
-                  
+      <div id="wrapper2">
+          <div id="div2">
+                <table class="table  table-sm table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Sign-In</th>
+                  <th scope="col">Sign-Out</th>
+                  <th scope="col">Event Type</th>
+                  <th scope="col">Rep Information</th>
+                  <th scope="col">Company</th>
+                  <th scope="col">Message</th>
+                  <th scope="col">Department</th>
+                  <th scope="col">Sign-In Location</th>
+                  <th scope="col">Sign-In Point Of Entry</th>
+                  <th scope="col">Contact</th>
+                  <th scope="col">Purpose Of Visit</th>
+                  <th scope="col">Company Status</th>
+                  <th scope="col">Rep Status</th>
+                  <th scope="col">Signed In By</th>
+                  <th scope="col">Rules Enforced?</th>
+                </tr>
+                <tr>
+                  <th scope="col">
+                  </th>
+                  <th scope="col">
+                  </th>
+                  <th scope="col"> <select class="custom-select">
+                      <option value="0">ALL</option>
+                      <option value="1">printed on-site</option>
+                      <option value="2">Printed remotely</option>
+                      <option value="3">SignIn event</option>
+                      <option value="4">Guest Pass</option>
+                      <option value="5">Digitally Printed</option>
+                    </select></th>
+                  <th scope="col"><input type="text" placeholder="Rep Information" /></th>
+                  <th scope="col"><input type="text" placeholder="Company" /></th>
+                  <th scope="col"><input type="text" placeholder="Message" /></th>
+                  <th scope="col"><input type="text" placeholder="Department" /></th>
+                  <th scope="col"><input type="text" placeholder="Sign-In Location" /></th>
+                  <th scope="col"><input type="text" placeholder="Sign-In Point Of Entry" /></th>
+                  <th scope="col"><input type="text" placeholder="Contact" /></th>
+                  <th scope="col"><input type="text" placeholder="Purpose Of Visit" /></th>
+                  <th scope="col"><select class="custom-select">
+                      <option value="0">ALL</option>
+                      <option value="1">Registered</option>
+                      <option value="2">Unregistered</option>
+                    </select></th>
+                  <th scope="col"><select class="custom-select">
+                      <option value="0">ALL</option>
+                      <option value="1">Active</option>
+                      <option value="2">Inactive</option>
+                    </select></th>
+                  <th scope="col"><input type="text" placeholder="Signed In By" /></th>
+                  <th scope="col"><select class="custom-select">
+                      <option value="0">ALL</option>
+                      <option value="1">True</option>
+                      <option value="2">False</option>
+                    </select></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#">Jul 05, 2016 01:33 AM</a></td>
+                  <td><a href="#">Jul 05, 2016 11:10 AM</a></td>
+                  <td>ALL</td>
+                  <td><a href="#">Tina Johansen</a><br>
+                    514349103<br>
+                    <a href="#">tina.johansen@vendormate.com</a><br>
+                    404-995-4768</td>
+                  <td><a href="#">Vendormate, Inc</a></td>
+                  <td><a href="#">Thank you for participating in the</a></td>
+                  <td>Accounting</td>
+                  <td>Beaches Primary Care Clinic</td>
+                  <td>East street</td>
+                  <td>FRED KALOMBO</td>
+                  <td>Admin</td>
+                  <td>Registered</td>
+                  <td></td>
+                  <td><a href="#">johnsonmemorial@vendormate.com.vm</a></td>
+                  <td>
+                    True</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Jul 05, 2016 01:33 AM</a></td>
+                  <td><a href="#">Jul 05, 2016 11:10 AM</a></td>
+                  <td>ALL</td>
+                  <td><a href="#">Bill Hayes</a><br>
+                    514349103<br>
+                    <a href="#">bill.hayes@vendormate.com</a><br>
+                    404-995-4768</td>
+                  <td><a href="#">Vendormatec</a></td>
+                  <td><a href="#">Thank you for participating in the</a></td>
+                  <td>Accounting</td>
+                  <td>Beaches Primary Care Clinic</td>
+                  <td>East street</td>
+                  <td>FRED KALOMBO</td>
+                  <td>Admin</td>
+                  <td>Registered</td>
+                  <td></td>
+                  <td><a href="#">johnsonmemorial@vendormate.com.vm</a></td>
+                  <td>
+                    True</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Jul 05, 2016 01:33 AM</a></td>
+                  <td><a href="#">Jul 05, 2016 11:10 AM</a></td>
+                  <td>ALL</td>
+                  <td><a href="#">Mike Ulven</a><br>
+                    514349103<br>
+                    <a href="#">mike@abbot.com</a><br>
+                    404-949-1333</td>
+                  <td><a href="#">Abbot</a></td>
+                  <td><a href="#">Thank you for participating in the</a></td>
+                  <td>MaterialsManagement</td>
+                  <td>BeachesPrimaryCareClinic</td>
+                  <td>FrontDesk</td>
+                  <td>StuartSeiler</td>
+                  <td>Admin</td>
+                  <td>Registered</td>
+                  <td></td>
+                  <td><a href="#">johnsonmemorial@vendormate.com.vm</a></td>
+                  <td>
+                    True</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Jul 05, 2016 01:33 AM</a></td>
+                  <td><a href="#">Jul 05, 2016 11:10 AM</a></td>
+                  <td>ALL</td>
+                  <td><a href="#">Mike Ulven</a><br>
+                    514349103<br>
+                    <a href="#">mike@abbot.com</a><br>
+                    404-949-1333</td>
+                  <td><a href="#">Abbot</a></td>
+                  <td><a href="#">Thank you for participating in the</a></td>
+                  <td>MaterialsManagement</td>
+                  <td>BeachesPrimaryCareClinic</td>
+                  <td>FrontDesk</td>
+                  <td>StuartSeiler</td>
+                  <td>Admin</td>
+                  <td>Registered</td>
+                  <td></td>
+                  <td><a href="#">johnsonmemorial@vendormate.com.vm</a></td>
+                  <td>
+                    True</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Jul 05, 2016 01:33 AM</a></td>
+                  <td><a href="#">Jul 05, 2016 11:10 AM</a></td>
+                  <td>ALL</td>
+                  <td><a href="#">Tina Johansen</a><br>
+                    514349103<br>
+                    <a href="#">tina.johansen@vendormate.com</a><br>
+                    404-995-4768</td>
+                  <td><a href="#">Vendormate, Inc</a></td>
+                  <td><a href="#">Thank you for participating in the</a></td>
+                  <td>Accounting</td>
+                  <td>Beaches Primary Care Clinic</td>
+                  <td>East street</td>
+                  <td>FRED KALOMBO</td>
+                  <td>Admin</td>
+                  <td>Registered</td>
+                  <td></td>
+                  <td><a href="#">johnsonmemorial@vendormate.com.vm</a></td>
+                  <td>
+                    True</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Jul 05, 2016 01:33 AM</a></td>
+                  <td><a href="#">Jul 05, 2016 11:10 AM</a></td>
+                  <td>ALL</td>
+                  <td><a href="#">Mike Ulven</a><br>
+                    514349103<br>
+                    <a href="#">mike@abbot.com</a><br>
+                    404-949-1333</td>
+                  <td><a href="#">Abbot</a></td>
+                  <td><a href="#">Thank you for participating in the</a></td>
+                  <td>MaterialsManagement</td>
+                  <td>BeachesPrimaryCareClinic</td>
+                  <td>FrontDesk</td>
+                  <td>StuartSeiler</td>
+                  <td>Admin</td>
+                  <td>Registered</td>
+                  <td></td>
+                  <td><a href="#">johnsonmemorial@vendormate.com.vm</a></td>
+                  <td>
+                    True</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        
+        <div class="row ml-1">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+          <p class="ml-3 mt-1">Export options:</p>
+          <a href="#"><i class="fa fa-file-text-o text-info ml-2 mt-2" aria-hidden="true"> CSV</i></a>
+          <a href="#"><i class="fa fa-file-excel-o text-info pl-3 mt-2" aria-hidden="true"> Xls</i></a>
+          <a href="#"><i class="fa fa-file-pdf-o text-info pl-3 mt-2" aria-hidden="true"> pdf</i></a>
+          <button class="ml-auto  size" tooltip="clear" placement="bottom">
+            <img src="\assets\clear-filters-16.png" width="15" height="15" /></button>
+          <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
+          </mat-paginator>
+        </div>
       </div>
-      
-      </div>
     </div>
-  </div>
-
-
-<!-- <div class="wmd-view-topscroll">
-    <div class="scroll-div1">
-    </div>
-</div>
-<div class="wmd-view">
-    <div class="scroll-div2">
-        content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content 
-    </div>
-</div> -->
-<!-- <form>
-    <fieldset>
-     <legend>Personalia:</legend>
-     <label for="fname">First name:</label>
-     <input type="text" id="fname" name="fname"><br><br>
-     <label for="lname">Last name:</label>
-     <input type="text" id="lname" name="lname"><br><br>
-     <label for="email">Email:</label>
-     <input type="email" id="email" name="email"><br><br>
-     <label for="birthday">Birthday:</label>
-     <input type="date" id="birthday" name="birthday"><br><br>
-     <input type="submit" value="Submit">
-    </fieldset>
-   </form>
-    -->

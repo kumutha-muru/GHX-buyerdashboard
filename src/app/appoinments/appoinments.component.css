@@ -1,3 +1,13 @@
+#wrapper1, #wrapper2,#wrapper2a{ 
+    border: none 0px RED;
+    overflow-x: scroll; overflow-y:hidden;
+}
+    #wrapper1{height: 20px; }
+    #wrapper2{height: 230px; }
+    #wrapper2a{height: 630px; }
+    #div1 {width:3000px; height: 20px; }
+    #div2 {width:3000px; height: 500px; 
+   }
 .accordion .card-header:after {
     font-family: 'FontAwesome';  
     content: "\f068";
@@ -34,35 +44,15 @@ a{
     overflow-y: auto;
     max-height: 300px;
   }
- th{
+th{
     font-size:13px;
     background-color: #BFCCD3;
 }
-tbody{
-    font-size:13px;
-}
+
 tr:nth-child(even){
     background-color:white;
   }
 tr:nth-child(odd){
       background-color: #f9f9f9;
   }
-  tr.mat-header-cell,td.mat-cell{
-    max-width:25px !important;
-    border: 1px solid #CCC !important;
-}
-td.mat-cell{
-  max-width:15px !important;
-}
-select{
-  max-width:60px !important;
-
-}
-  footer{
-    position: fixed;
-    bottom: 0;
-    background-color:#636363;
-    display: block;
-    width: 100%;
-  }
- 
+  

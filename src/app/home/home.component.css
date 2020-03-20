@@ -9,19 +9,20 @@ a{
 .mat-row:nth-child(odd){
     background-color: #f9f9f9;
 }
-table {
-    width: 100%;
-  }
-  
-  th {
-    text-align: left;
-  }
-  .mat-header-cell  {
-    color: #0A0A0A;
-    font-size: medium;
-    background-color: #BFCCD3;
-  }
+
+th{
+  font-size:16px;
+  background-color: #BFCCD3;
+}
+tr:nth-child(even){
+  background-color:white;
+}
+tr:nth-child(odd){
+    background-color: #f9f9f9;
+}
   .w{
     max-width:77px !important;
-  
+  }
+  .container-fluid{
+    height:auto !important;
   }

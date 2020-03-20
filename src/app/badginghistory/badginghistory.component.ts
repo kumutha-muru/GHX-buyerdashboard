@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-declare var $: any;
 
 @Component({
   selector: 'app-badginghistory',
@@ -7,22 +6,16 @@ declare var $: any;
   styleUrls: ['./badginghistory.component.css']
 })
 export class BadginghistoryComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit() {
-    $(function(){
-      $(".wmd-view-topscroll").scroll(function(){
-          $(".wmd-view")
-              .scrollLeft($(".wmd-view-topscroll").scrollLeft());
-      });
-      $(".wmd-view").scroll(function(){
-          $(".wmd-view-topscroll")
-              .scrollLeft($(".wmd-view").scrollLeft());
-      });
-  });
-  
-  
+    var wrapper1 = document.getElementById('wrapper1');
+var wrapper2 = document.getElementById('wrapper2');
+wrapper1.onscroll = function() {
+  wrapper2.scrollLeft = wrapper1.scrollLeft;
+};
+wrapper2.onscroll = function() {
+  wrapper1.scrollLeft = wrapper2.scrollLeft;
+};
   }
 
 }

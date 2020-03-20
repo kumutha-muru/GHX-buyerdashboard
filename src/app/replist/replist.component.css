@@ -7,6 +7,13 @@ fieldset.scheduler-border
     padding: 0 1.4em 1.4em !important;
     margin: 10px 0 1.5em 0 !important;
 }
+fieldset.scheduler-border1 
+{
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em !important;
+    margin: 10px 0 1.5em 10px !important;
+    height:200px;
+}
 legend.scheduler-border 
 {
     font-size:15px!important;
@@ -16,3 +23,42 @@ legend.scheduler-border
     padding:0 10px;
     border-bottom:none;
 }
+.checked {
+    color: orange;
+  }
+  .ml{
+      margin-left:140px;
+  }
+  .nav-item a { background-color: #E0E0E0 !important;}
+  .accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    content: "\f067"; 
+}
+thead th{
+    font-size:13px;
+    background-color: #BFCCD3;
+}
+tbody{
+    font-size:13px;
+}
+tr:nth-child(even){
+    background-color:white;
+  }
+tr:nth-child(odd){
+      background-color: #f9f9f9;
+  }
+.text-right{
+    font-size:14px !important;
+}
+footer{
+  bottom: 0;
+    background-color:#636363;
+  }
+  p{
+      font-size:14px;
+  }
+ 

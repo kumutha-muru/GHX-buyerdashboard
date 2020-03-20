@@ -1,0 +1,459 @@
+<app-index></app-index>
+<div class="container-fluid py-3">
+    <div id="accordion" class="accordion">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseOne">
+                <a class="card-title">
+                    Appoinments
+                </a>
+            </div>
+            <div id="collapseOne" class="card-body collapse show" data-parent="#accordion">
+                <button id="b" class="btn bg-primary text-white">Add Appoinment</button>
+            <div class="row ml-1 mt-1">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="ml-3 mt-1">Export options:</p>
+                    <a href="#"><i class="fa fa-file-text-o text-info ml-2 mt-2" aria-hidden="true"> CSV</i></a>
+                    <a href="#"><i class="fa fa-file-excel-o text-info pl-3 mt-2" aria-hidden="true"> Xls</i></a>
+                    <a href="#"><i class="fa fa-file-pdf-o text-info pl-3 mt-2" aria-hidden="true"> pdf</i></a>
+                    <button class="ml-auto size" tooltip="clear" placement="bottom">
+                        <img src="\assets\clear-filters-16.png" width="15" height="15" /></button>
+                    <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
+                    </mat-paginator>
+                </div>
+                <div id="wrapper1">
+                    <div id="div1">
+                    </div>
+                </div>
+                <div id="wrapper2">
+                    <div id="div2">
+                        <table class="table table-sm" mat-table [dataSource]="obj1">
+                            <ng-container matColumnDef="actions">
+                                <th mat-header-cell *matHeaderCellDef><b>Actions</b></th>
+                                <td mat-cell *matCellDef><select>
+                                        <option>select</option>
+                                        <option>View</option>
+                                        <option>Delete</option>
+                                        <option>Add to Calender</option>
+                                    </select></td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="actions1">
+                                <th mat-header-cell *matHeaderCellDef></th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="startdate/time">
+                                <th mat-header-cell *matHeaderCellDef><b>Start Date/Time</b></th>
+                                <td mat-cell *matCellDef="let obj1">{{obj1.startTime  | date:'medium'}} {{obj1.timeZoneAbbreviation}} </td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="startdate/time1">
+                                <th mat-header-cell *matHeaderCellDef>
+                                    <mat-form-field>
+                                        <input #fromInput matInput [matDatepicker]="picker" placeholder="Start Date/Time">
+                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker></mat-datepicker>
+                                      </mat-form-field>
+                                     <button class="btn btn-primary" (click)="resetForm()">Clear</button> 
+                                </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="enddate/time">
+                                <th mat-header-cell *matHeaderCellDef><b>End Date/Time</b></th>
+                                <td mat-cell *matCellDef="let obj1"> {{obj1.endTime  | date:'medium'}} {{obj1.timeZoneAbbreviation}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="enddate/time1">
+                                <th mat-header-cell *matHeaderCellDef>  
+                                    <mat-form-field>
+                                    <input #fromInput1 matInput [matDatepicker]="picker1" placeholder="End Date/Time">
+                                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker1></mat-datepicker>
+                                  </mat-form-field>
+                                 <button class="btn btn-primary" (click)="resetForm()">Clear</button> </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="appoinment">
+                                <th mat-header-cell *matHeaderCellDef><b>Appoinment Type</b></th>
+                                <td mat-cell *matCellDef="let obj1">{{obj1.legalNameForReportDisplay}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="appoinment1">
+                                <th mat-header-cell *matHeaderCellDef>
+                                    <select>
+                                        <option>My Appoinments</option>
+                                        <option>All Appoinments</option>
+                                    </select>
+                                </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="company">
+                                <th mat-header-cell *matHeaderCellDef><b>Company</b></th>
+                                <td mat-cell *matCellDef="let obj1">{{obj1.legalNameForReportDisplay}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="company1">
+                                <th mat-header-cell *matHeaderCellDef><input type="text" placeholder="Company" /> </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="user">
+                                <th mat-header-cell *matHeaderCellDef><b>User</b></th>
+                                <td mat-cell *matCellDef="let obj1">{{obj1.repsForReportDisplay}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="user1">
+                                <th mat-header-cell *matHeaderCellDef><input type="text" placeholder="User" /></th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="email">
+                                <th mat-header-cell *matHeaderCellDef><b>Email</b></th>
+                                <td mat-cell *matCellDef="let obj1">{{obj1.repsEmailForDisplay}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="email1">
+                                <th mat-header-cell *matHeaderCellDef><input type="text" placeholder="Email" /></th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="staff">
+                                <th mat-header-cell *matHeaderCellDef><b>Staff</b></th>
+                                <td mat-cell *matCellDef="let obj1">
+                                    {{obj1.buyersDetailsForDisplay}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="staff1">
+                                <th mat-header-cell *matHeaderCellDef><input type="text" placeholder="Staff" /></th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="department">
+                                <th mat-header-cell *matHeaderCellDef><b>Department</b></th>
+                                <td mat-cell *matCellDef="let obj1">
+                                    {{obj1.departmentForDisplay}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="department1">
+                                <th mat-header-cell *matHeaderCellDef><input type="text" placeholder="department" />
+                                </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="locations">
+                                <th mat-header-cell *matHeaderCellDef><b>Locations</b></th>
+                                <td mat-cell *matCellDef="let obj1">{{obj1.locationForDisplay}} </td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="locations1">
+                                <th mat-header-cell *matHeaderCellDef>
+                                    <input type="text" placeholder="location" />
+                                </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="subject">
+                                <th mat-header-cell *matHeaderCellDef><b>Subject</b></th>
+                                <td mat-cell *matCellDef="let obj1">{{obj1.subject}} </td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="subject1">
+                                <th mat-header-cell *matHeaderCellDef>
+                                    <input type="text" placeholder="subject" />
+                                </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="createdby">
+                                <th mat-header-cell *matHeaderCellDef><b>Created By</b></th>
+                                <td mat-cell *matCellDef="let obj1">{{obj1.createdBy}} </td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="createdby1">
+                                <th mat-header-cell *matHeaderCellDef>
+                                    <input type="text" placeholder="Created By" />
+                                </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="datetimecreated">
+                                <th mat-header-cell *matHeaderCellDef><b>Date/Time Created</b></th>
+                                <td mat-cell *matCellDef="let obj1">{{obj1.createdOn  | date:'medium'}} </td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="datetimecreated1">
+                                <th mat-header-cell *matHeaderCellDef></th>
+                            </ng-container>
+
+                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                            <tr mat-header-row
+                                *matHeaderRowDef="['actions1','startdate/time1','enddate/time1','appoinment1','company1','user1','email1','staff1','department1','locations1','subject1','createdby1','datetimecreated1']">
+                            </tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="row mt-1 ml-1">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="ml-3 mt-1">Export options:</p>
+                    <a href="#"><i class="fa fa-file-text-o text-info ml-2 mt-2" aria-hidden="true"> CSV</i></a>
+                    <a href="#"><i class="fa fa-file-excel-o text-info pl-3 mt-2" aria-hidden="true"> Xls</i></a>
+                    <a href="#"><i class="fa fa-file-pdf-o text-info pl-3 mt-2" aria-hidden="true"> pdf</i></a>
+                    <button class="ml-auto size " tooltip="clear" placement="bottom">
+                        <img class="ml-auto" src="\assets\clear-filters-16.png" width="15" height="15" /></button>
+                    <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
+                    </mat-paginator>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="accordion" class="accordion mt-2">
+        <div class="card">
+            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <a class="card-title">
+                    Manage Appoinment Requests
+                </a>
+            </div>
+            <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+                <div class="row ml-1 mb-2">
+                    <select class="col-sm-2">
+                        <option value="0">Actions</option>
+                        <option value="0">Accept</option>
+                        <option value="0">Decline</option>
+                        <option value="0">Edit</option>
+                    </select>
+                    <a class="ml-auto mr-4" href="#" data-toggle="modal" data-target="#exampleModal1">
+                        <p>Help</p>
+                    </a></div>
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                This section allows you to review your
+                                rep initiated appointment requests and either accept or decline the request.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ml-1">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="ml-auto size" tooltip="clear" placement="bottom">
+                        <img class="ml-auto" src="\assets\clear-filters-16.png" width="15" height="15" /></button>
+                    <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
+                    </mat-paginator>
+                </div>
+                
+                <div id="wrapper2a">
+                    <div id="div2">
+                     <table class="ml-2 table table-sm" mat-table [dataSource]="obj2">
+                            <ng-container matColumnDef="checkbox">
+                                <th mat-header-cell *matHeaderCellDef></th>
+                                <td mat-cell *matCellDef><input type="checkbox" /></td>
+                              </ng-container>
+                    
+                              <ng-container matColumnDef="checkbox1">
+                                <th mat-header-cell *matHeaderCellDef></th>
+                              </ng-container>
+
+                            <ng-container matColumnDef="subject">
+                                <th mat-header-cell *matHeaderCellDef><b>Subject</b></th>
+                                <td mat-cell *matCellDef="let obj2"><a href="#">{{obj2.description}}</a></td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="subject1">
+                                <th mat-header-cell *matHeaderCellDef><input type="text" placeholder="subject" /></th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="status">
+                                <th mat-header-cell *matHeaderCellDef><b>Status</b></th>
+                                <td mat-cell *matCellDef></td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="status1">
+                                <th mat-header-cell *matHeaderCellDef>
+                                    <select name="select" id="select">
+                                        <option value="0">Accepted</option>
+                                        <option value="1">Pending</option>
+                                        <option value="2">Declined</option>
+                                        <option value="3">Expired</option>
+                                    </select>
+                                </th>
+                            </ng-container>
+                            
+                            <ng-container matColumnDef="startdate/time">
+                                <th mat-header-cell *matHeaderCellDef><b>Start Date/Time</b></th>
+                                <td mat-cell *matCellDef="let obj2">{{obj2.startTime  | date:'medium'}} {{obj2.timeZoneAbbreviation}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="startdate/time1">
+                                <th mat-header-cell *matHeaderCellDef>
+                               <mat-form-field>
+                                        <input #fromInputo matInput [matDatepicker]="pickero" placeholder="Start Date/Time">
+                                        <mat-datepicker-toggle matSuffix [for]="pickero"></mat-datepicker-toggle>
+                                        <mat-datepicker #pickero></mat-datepicker>
+                                      </mat-form-field>
+                                     <button class="btn btn-primary" (click)="resetForm()">Clear</button>
+                                </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="enddate/time">
+                                <th mat-header-cell *matHeaderCellDef><b>End Date/Time</b></th>
+                                <td mat-cell *matCellDef="let obj2"> {{obj2.endTime  | date:'medium'}} {{obj2.timeZoneAbbreviation}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="enddate/time1">
+                                <th mat-header-cell *matHeaderCellDef>  
+                                <mat-form-field>
+                                    <input #fromInputt matInput [matDatepicker]="pickert" placeholder="End Date/Time">
+                                    <mat-datepicker-toggle matSuffix [for]="pickert"></mat-datepicker-toggle>
+                                    <mat-datepicker #pickert></mat-datepicker>
+                                  </mat-form-field>
+                                 <button class="btn btn-primary" (click)="resetForm()">Clear</button> </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="recurrence">
+                                <th mat-header-cell *matHeaderCellDef><b>Recurrence</b></th>
+                                <td mat-cell *matCellDef="let obj2">{{obj2.freq}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="recurrence1">
+                                <th mat-header-cell *matHeaderCellDef>
+                                    <input type="text" placeholder="Recurrence" />
+                                </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="requester">
+                                <th mat-header-cell *matHeaderCellDef><b>Requester</b></th>
+                                <td mat-cell *matCellDef></td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="requester1">
+                                <th mat-header-cell *matHeaderCellDef><input type="text" placeholder="Requester" /> </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="company">
+                                <th mat-header-cell *matHeaderCellDef><b>Company</b></th>
+                                <td mat-cell *matCellDef="let obj2"><a href="#">{{obj2.legalName }}</a></td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="company1">
+                                <th mat-header-cell *matHeaderCellDef><input type="text" placeholder="company" /></th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="submittedon">
+                                <th mat-header-cell *matHeaderCellDef><b>Submitted On</b></th>
+                                <td mat-cell *matCellDef="let obj2">{{obj2.createdOn  | date:'medium'}} {{obj2.timeZoneAbbreviation}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="submittedon1">
+                                <th mat-header-cell *matHeaderCellDef><input type="text" placeholder="company" /></th>
+                            </ng-container>
+
+                             <ng-container matColumnDef="location">
+                                <th mat-header-cell *matHeaderCellDef><b>Locations</b></th>
+                                <td mat-cell *matCellDef="let obj2">{{obj2.locationForDisplay}} </td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="location1">
+                                <th mat-header-cell *matHeaderCellDef>
+                                    <input type="text" placeholder="location" />
+                                </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="department">
+                                <th mat-header-cell *matHeaderCellDef><b>Department</b></th>
+                                <td mat-cell *matCellDef="let obj2">
+                                    {{obj2.departmentName}}</td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="department1">
+                                <th mat-header-cell *matHeaderCellDef><input type="text" placeholder="department" />
+                                </th>
+                            </ng-container>
+
+                            <ng-container matColumnDef="requestedstaff">
+                                <th mat-header-cell *matHeaderCellDef><b>Requested Staff</b></th>
+                                <td mat-cell *matCellDef="let obj2">{{obj2.requestedStaff}} </td>
+                            </ng-container>
+
+                            <ng-container matColumnDef="requestedstaff1">
+                                <th mat-header-cell *matHeaderCellDef>
+                                    <input type="text" placeholder="requestedstaff"/>
+                                </th>
+                            </ng-container>
+
+                           <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+                            <tr mat-header-row
+                                *matHeaderRowDef="['checkbox1','subject1','status1','startdate/time1','enddate/time1','recurrence1','requester1','company1','submittedon1','location1','department1','requestedstaff1']">
+                            </tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
+                        </table>
+                    </div>
+                </div>
+                              
+                <div class="row ml-1">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="ml-auto size" tooltip="clear" placement="bottom">
+                        <img class="ml-auto" src="\assets\clear-filters-16.png" width="15" height="15" /></button>
+                    <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
+                    </mat-paginator>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

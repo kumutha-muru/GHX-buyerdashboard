@@ -44,6 +44,7 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule,
+  MatFormField,
 } from '@angular/material';
 import { RepsComponent } from './reps/reps.component';
 import { ManageusersComponent } from './manageusers/manageusers.component';
@@ -51,33 +52,35 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReplistComponent } from './replist/replist.component';
 import { ReportsComponent } from './reports/reports.component';
 import { BadginghistoryComponent } from './badginghistory/badginghistory.component';
+import { AppoinmentsComponent } from './appoinments/appoinments.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
+import { SigninarepComponent } from './signinarep/signinarep.component';
+import { FormsModule } from '@angular/forms';
+import { ResourcecenterComponent } from './resourcecenter/resourcecenter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-
     VendorComponent,
-
     HomeComponent,
-
     RepsComponent,
-
     ManageusersComponent,
-
     ProfileComponent,
-
-ReplistComponent,
-
+    ReplistComponent,
     ReportsComponent,
-    BadginghistoryComponent
+    BadginghistoryComponent,
+    AppoinmentsComponent,
+    FooterComponent,
+    SigninarepComponent,
+    ResourcecenterComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-
     TooltipModule,
     MatAutocompleteModule,
     MatBadgeModule,
@@ -118,8 +121,10 @@ ReplistComponent,
     BrowserAnimationsModule,
     TooltipModule,
     MatPaginatorModule,
-    MatTableModule
-
+    MatTableModule,
+    MatDatepickerModule,
+    HttpClientModule,
+  FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

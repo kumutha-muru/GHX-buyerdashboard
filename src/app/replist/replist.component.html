@@ -1,44 +1,634 @@
 <app-index></app-index>
 <a href="#" class="m-3" routerLink="/reps">back to Rep List</a>
-<div class="d-flex  justify-content-around">
-<fieldset class="col-sm-5 scheduler-border">
-  <legend class="scheduler-border">Rep Info</legend>
-  <h5 class="ml-2">Tina Johansen</h5>
-<div class="d-flex">
-  <div class="col-sm-10">
-  <div class="row">
-     <label class="col-sm-4"><b>Employer</b></label>
-    <a class="col-sm-6" href="#">Vendormate, Inc</a></div>
- <div class="row">
-  <label class="col-sm-4"><b>Email</b></label>
-  <p class="col-sm-6">tina.johansen@vendormate.com</p>
- </div>
-<div class="row">
-  <label class="col-sm-4"><b>Phone</b></label>
-  <p class="col-sm-6"> 404-995-4768</p>
-</div>  
-<div class="row">
-  <label class="col-sm-4"><b>Title</b></label>
-  <p class="col-sm-6">Manager, Sales Development</p>
+<div class="d-flex justify-content-around">
+  <fieldset class="col-sm-5 scheduler-border">
+    <legend class="scheduler-border">Rep Info</legend>
+    <h5 class="ml-2">Tina Johansen</h5>
+    <div class="d-flex">
+      <div class="col-sm-10">
+        <div class="row">
+          <label class="col-sm-4"><b>Employer</b></label>
+          <a class="col-sm-6" href="#">Vendormate, Inc</a></div>
+        <div class="row">
+          <label class="col-sm-4"><b>Email</b></label>
+          <p class="col-sm-6">tina.johansen@vendormate.com</p>
+        </div>
+        <div class="row">
+          <label class="col-sm-4"><b>Phone</b></label>
+          <p class="col-sm-6"> 404-995-4768</p>
+        </div>
+        <div class="row">
+          <label class="col-sm-4"><b>Title</b></label>
+          <p class="col-sm-6">Manager, Sales Development</p>
+        </div>
+        <div class="row">
+          <label class="col-sm-4"><b>Vendor Tier Level</b></label>
+          <p class="col-sm-4"> High</p>
+        </div>
+        <a href="#" class="ml" routerLink="/badge" routerLinkActive="class-name"
+          routerLinkActiveOptions="{exact:true}">Badging History</a>
+      </div>
+      <div class="col-sm-3">
+        <img class="w-auto" src="\assets\badgePhoto.jpeg" /></div>
+    </div>
+  </fieldset>
+  <fieldset class="col-sm-3 scheduler-border">
+    <legend class="scheduler-border">Score Card Rating</legend>
+    <a href="#" class="ml">36 reviews</a>
+    <div class="row">
+      <p class="ml-3"><b>Average Review</b></p>
+      <span class="ml-3 fas fa-star fa fa-star-o fa-2x rating-star checked"></span>
+      <span class="fa fa-star-o fa-2x rating-star checked"></span>
+      <span class="fa fa-star-o fa-2x rating-star checked"></span>
+      <span class="fa fa-star-o fa-2x rating-star checked"></span>
+      <span class="fa fa-star-o fa-2x rating-star checked"></span>
+    </div>
+    <p class="ml">0.2 out of 5 stars</p>
+    <div class="row">
+      <p class="ml-3"><b>Your review</b></p>
+      <span class="ml-5 fas fa-star fa fa-star-o fa-2x rating-star checked"></span>
+      <span class="fa fa-star-o fa-2x rating-star checked"></span>
+      <span class="fa fa-star-o fa-2x rating-star checked"></span>
+      <span class="fa fa-star-o fa-2x rating-star checked"></span>
+      <span class="fa fa-star-o fa-2x rating-star checked"></span>
+    </div>
+    <p class="ml">0.2 out of 5 stars</p>
+  </fieldset>
+  <fieldset class="col-sm-3 scheduler-border">
+    <legend class="scheduler-border">Compliance Status</legend>
+    <div class="row ml-1"><b>Sanction Status</b>
+      <p class="text-success ml-5">PASS</p>
+    </div>
+    <div class="row ml-1"><b> Requirements Status</b>
+      <p class="text-danger ml-3">FAIL</p>
+    </div>
+  </fieldset>
 </div>
- <div class="row">
-  <label class="col-sm-4"><b>Vendor Tier Level</b></label>
-  <p class="col-sm-4"> High</p>
- </div>
-<a href="#" class="text-right">Badging History</a></div>
- <div class="col-sm-3">
- <img class="w-auto" src="\assets\badgePhoto.jpeg"/></div></div>
-</fieldset>
-<fieldset class="col-sm-3 scheduler-border">
-  <legend class="scheduler-border">Score Card Rating</legend>
-  <a href="#" class="ml-5">36 reviews</a>
-</fieldset>
-<fieldset class="col-sm-3 scheduler-border">
-  <legend class="scheduler-border">Compliance Status</legend>
-   <div class="row ml-2"><b>Sanction Status</b>
-    <p class="text-success ml-5">PASS</p></div>
-    <div class="row ml-2"><b> Requirements Status</b>
-      <p class="text-danger ml-3">FAIL</p></div>
-</fieldset>
-</div>
-
+      <ul id="tabs" class="nav nav-tabs mx-3">
+      <li class="nav-item"><a href="" data-target="#info" data-toggle="tab" class="nav-link small active">Info</a></li>
+      <li class="nav-item"><a href="" data-target="#requirement" data-toggle="tab"
+          class="nav-link small ml-2">Requirements</a></li>
+      <li class="nav-item"><a href="" data-target="#scorecard" data-toggle="tab" class="nav-link small ml-2">Score
+          Card</a>
+      </li>
+    </ul>
+    <br>
+    <div id="tabsContent" class="tab-content mx-3">
+      <div id="info" class="tab-pane fade active show">
+        <div class="d-flex ">
+          <fieldset class="col-sm-6 scheduler-border">
+            <legend class="scheduler-border">Supervisor</legend>
+            <div class="row">
+              <p class="col-sm-4"><b>Name</b></p>
+              <p class="col-sm-3">Tina Johansen</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-4"><b>Title</b></p>
+              <p class="col-sm-3">professional title</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-4"><b>Phone</b></p>
+              <p class="col-sm-3">Phone</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-4"><b>Email</b></p>
+              <p class="col-sm-3">tina.johansen@vendormate.com</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-4"><b> Department</b></p>
+              <p class="col-sm-3">dept</p>
+            </div>
+          </fieldset>
+          <fieldset class="col-sm-5 scheduler-border1">
+            <legend class="scheduler-border">Conflict of Interest</legend>
+            <div class="row">
+              <p class="col-sm-4"><b>Relationships</b></p>
+              <p class="col-sm-5">No Conflict Of Interest</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-4"><b>Board Affiliations</b></p>
+              <p class="col-sm-5">No Conflict Of Interest</p>
+            </div>
+            <div class="row">
+              <p class="col-sm-4"><b>Compensation</b></p>
+              <p class="col-sm-5">No Conflict Of Interest</p>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div id="requirement" class="tab-pane fade ">
+        <div id="accordion" class="accordion">
+          <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseOne">
+              <a class="card-title">
+                Documents
+              </a>
+            </div>
+            <div id="collapseOne" class="card-body collapse show" data-parent="#accordion">
+              <ul id="tabs" class="nav nav-tabs">
+                <li class="nav-item"><a href="" data-target="#documents" data-toggle="tab"
+                    class="nav-link small active"><img src="\assets\no.png"/>Documents</a></li>
+                <li class="nav-item"><a href="" data-target="#documents" data-toggle="tab"
+                    class="nav-link small ml-2">Optional Documents</a></li>
+              </ul>
+              <div id="tabsContent" class="tab-content">
+                <div id="documents" class="tab-pane fade active show">
+                  <div class="row ml-1 mt-1">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
+                    </mat-paginator>
+                  </div>
+                  <table class="table  table-sm table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Status</th>
+                        <th scope="col">What?</th>
+                        <th scope="col">Why?</th>
+                        <th scope="col">How?</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Uploaded By</th>
+                        <th scope="col">Upload date</th>
+                        <th scope="col">Expiration Date</th>
+                      </tr>
+                      <tr>
+                        <th scope="col"><select class="custom-select">
+                            <option value="0">ALL</option>
+                            <option value="4">FAIL</option>
+                            <option value="3">ALERT</option>
+                            <option value="2">PASS</option>
+                          </select></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center"><img src="\assets\no.png"/><br>Expired</td>
+                        <td>myTemplate 2</td>
+                        <td>Test template for bug 2629</td>
+                        <td>Test template for bug 2629</td>
+                        <td>Individual</td>
+                        <td>jsven@baxter.com</td>
+                        <td>Jan 09, 2019 </td>
+                        <td>Mar 01, 2019</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center"><img src="\assets\no.png"/><br>Missing</td>
+                        <td>Fulfilled By Provider<br>
+                        <a href="#"><span tooltip="Upload" placement="top"><i class="fa fa-upload fa-lg" 
+                          data-toggle="tooltip" title="Upload" aria-hidden="true"></i></span>
+                        </a>
+                        <i class="fa fa-eye fa-lg mx-2" data-toggle="tooltip"  title="View" aria-hidden="true"></i>
+                        <i class="fa fa-edit fa-lg" data-toggle="tooltip"  title="Update"></i>
+                        <i class="fa fa-upload fa-lg mx-2" data-toggle="tooltip" title="Download" aria-hidden="true"></i>
+                        <i class="fa fa-trash fa-lg" data-toggle="tooltip" title="Delete" aria-hidden="true"></i>
+                      </td>
+                        <td>Secretary of State Filing is necessary for es <a href="#" data-toggle="modal" data-target="#exampleModal">more...</a>
+                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Why?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                Secretary of State Filing is necessary for establishing valid credentials for doing business in State.
+                              </div>
+                            </div>
+                          </div>
+                        </div></td>
+                        <td>The hard copy of the document should be scann <a href="#" data-toggle="modal" data-target="#exampleModal1">more...</a>
+                          <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">How?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                The hard copy of the document should be scanned into electronic format and then uploaded here. for more details
+                              </div>
+                            </div>
+                          </div>
+                        </div></td>
+                        <td>Company</td>
+                        <td>jsven@baxter.com</td>
+                        <td>Jan 09, 2019 </td>
+                        <td>Mar 01, 2019</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center"><img src="\assets\no.png"/><br>Expired</td>
+                        <td>Representative Certification By RM</td>
+                        <td>Representative's certification descr suggeste <a href="#" data-toggle="modal" data-target="#exampleModal3">more...</a>
+                          <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Why?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                Representative's certification descr suggested by RM
+                              </div>
+                            </div>
+                          </div>
+                        </div></td>
+                        <td>Representative's certification descr suggeste <a href="#" data-toggle="modal" data-target="#exampleModal4">more...</a>
+                          <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">How?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                Representative's certification descr suggested by RM
+                              </div>
+                            </div>
+                          </div>
+                        </div></td>
+                        <td>Individual</td>
+                        <td>rep1_02oct@tested.com</td>
+                        <td>Feb 11, 2019 </td>
+                        <td>May 10, 2019</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center"><img src="\assets\okay.png"/><br>Unverified</td>
+                        <td>bloodtest2</td>
+                        <td>to test blood</td>
+                        <td>To take this training, visit ABC Medical's in <a href="#" data-toggle="modal" data-target="#exampleModal5">more...</a>
+                          <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">How?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                To take this training, visit ABC Medical's interal training portal and take the "HIPAA Training."
+                                 Download the PDF after completion and upload to your Document Repository.
+                              </div>
+                            </div>
+                          </div>
+                        </div></td>
+                        <td>Individual</td>
+                        <td>clini@tested.com</td>
+                        <td>Feb 11, 2012</td>
+                        <td>May 17, 2019</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center"><img src="\assets\okay.png"/><br>Unverified</td>
+                        <td>Medical History Report</td>
+                        <td>history report</td>
+                        <td></td>
+                        <td>Individual</td>
+                        <td>hippa@clinic.com</td>
+                        <td>May 11, 2016</td>
+                        <td>May 17, 2019</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div></div></div></div>
+              <div id="accordion" class="accordion mt-2">
+                <div class="card">
+                  <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseTwo">
+                    <a class="card-title">
+                      Policies
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="card-body collapse show" data-parent="#accordion">
+                    <div class="row ml-1 mt-1">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <mat-paginator [length]="100" [pageSize]="5" [pageSizeOptions]="[5, 10, 30, 100]">
+                      </mat-paginator>
+                    </div>
+                    <table class="table  table-sm table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">Status</th>
+                          <th scope="col">What?</th>
+                          <th scope="col">Why?</th>
+                          <th scope="col">Acknowledge By</th>
+                          <th scope="col">Acknowledgement Date</th>
+                        </tr>
+                        <tr>
+                          <th scope="col"><select class="custom-select">
+                              <option value="0">ALL</option>
+                              <option value="4">FAIL</option>
+                              <option value="3">ALERT</option>
+                              <option value="2">PASS</option>
+                            </select></th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center"><img src="\assets\no.png"/><br>Expired</td>
+                          <td><a href="#">myTemplate 2</a></td>
+                          <td>Test template for bug 2629</td>
+                          <td>Balaji narasimhan</td>
+                          <td>Jan 09, 2019</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center"><img src="\assets\no.png"/><br>Missing</td>
+                          <td>Fulfilled By Provider</td>
+                          <td>Secretary of State Filing is necessary for es <a href="#" data-toggle="modal" data-target="#exampleModal">more...</a>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Why?</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  Secretary of State Filing is necessary for establishing valid credentials for doing business in State.
+                                </div>
+                              </div>
+                            </div>
+                          </div></td>
+                          <td>jack</td>
+                          <td>May 10, 2019 </td>
+                        </tr>
+                        <tr>
+                          <td class="text-center"><img src="\assets\no.png"/><br>Expired</td>
+                          <td>Representative Certification By RM</td>
+                          <td>Representative's certification descr suggeste <a href="#" data-toggle="modal" data-target="#exampleModal3">more...</a>
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Why?</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  Representative's certification descr suggested by RM
+                                </div>
+                              </div>
+                            </div>
+                          </div></td>
+                          <td>Morgan Freeman</td>
+                          <td>May 09, 2017</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center"><img src="\assets\okay.png"/><br>Acknowledged</td>
+                          <td><a href="#">bloodtest2</a></td>
+                          <td>to test blood</td>
+                          <td>Jhony</td>
+                          <td>Jan 09, 2015</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center"><img src="\assets\okay.png"/><br>Acknowledged</td>
+                          <td><a href="#">Medical History Report</a></td>
+                          <td>history report</td>
+                          <td>Nicolas</td>
+                          <td>Jan 09, 2014</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      <div id="scorecard" class="tab-pane fade">
+        <div class="d-flex flex-row">
+          <div class="col-sm-6">
+        <div class="d-flex flex-row"><div class="col-sm-8 text-right">Responsiveness: Is the vendor responsive to the needs of the patients, 
+        physicians and hospital? (10 highest score)</div>
+        <div class="col-sm-4"><span class="ml-5 fas fa-star fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span></div>
+      </div>
+      <div class="d-flex flex-row"><div class="col-sm-8 text-right">test question 2
+      </div>
+        <div class="col-sm-4"><span class="ml-5 fas fa-star fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span></div>
+      </div>
+      <div class="d-flex flex-row"><div class="col-sm-8 text-right">Arul - My New Rep Score Question
+      </div>
+        <div class="col-sm-4"><span class="ml-5 fas fa-star fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span></div>
+      </div>
+      <div class="d-flex flex-row"><div class="col-sm-8 text-right">test question 3
+      </div>
+        <div class="col-sm-4"><span class="ml-5 fas fa-star fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span></div>
+      </div>
+      <div class="d-flex flex-row"><div class="col-sm-8 text-right">Anti Influenza Policy For Rep
+      </div>
+        <div class="col-sm-4"><span class="ml-5 fas fa-star fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span></div>
+      </div>
+      <div class="d-flex flex-row"><div class="col-sm-8 text-right">new question
+      </div>
+        <div class="col-sm-4"><span class="ml-5 fas fa-star fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span></div>
+      </div>
+      <div class="d-flex flex-row"><div class="col-sm-8 text-right">Meeta..My new Rep question
+      </div>
+        <div class="col-sm-4"><span class="ml-5 fas fa-star fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span></div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+    <input class="w-100 h-50" type="text" placeholder="Notes"/>
+    <p>Overall Rating</p>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <p>1.5 out of 5 stars</p>
+    <button class="btn bg-success text-white">Submit</button>
+  </div></div>
+  <div class="mt-5 ml-5">
+  <h6>Review History</h6>
+  <p><b>beaufort vj</b><br> 
+May 20, 2019<br>
+<span class="fa fa-star-o fa-lg rating-star checked"></span>
+<span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span></p>
+  <p>Professionalism: Does the representative engage you in a courteous and professional manner? 
+    (10 highest score) - <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+  </p>
+  <p>Product and/or Service Knowledge: Does the representative demonstrate knowledge of the
+     product and/or service for which they are representing? (10 highest score) -<span class="fa fa-star-o fa-lg rating-star checked"></span>
+     <span class="fa fa-star-o fa-lg rating-star checked"></span>
+         <span class="fa fa-star-o fa-lg rating-star checked"></span>
+         <span class="fa fa-star-o fa-lg rating-star checked"></span>
+         <span class="fa fa-star-o fa-lg rating-star checked"></span>
+  </p>
+  <p>Professionalism: For appointments does the representative arrive on time? (10 highest score) -<span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+  </p>
+  <p>Compliance: Does the representative adhere to the Policies and Procedures set forth by the health 
+    system? (10 highest score) (the one without cell phone use and radiation safety) -<span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+  </p>
+  <p>Overall Satisfaction: Considering all factors, how satisfied are you with this representative? 
+    (10 highest score) -<span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+  </p>
+  <p>Responsiveness: Is the vendor responsive to the needs of the patients, physicians and hospital? 
+    (10 highest score) -<span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+  </p>
+  <p><b>Arunkumar Pandian RedwoodHQ</b><br>
+    May 20, 2019<br>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+    <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        <span class="fa fa-star-o fa-lg rating-star checked"></span></p>
+        <p>Overall Satisfaction: Considering all factors, how satisfied are you with this representative?
+           (10 highest score) - <span class="fa fa-star-o fa-lg rating-star checked"></span>
+           <span class="fa fa-star-o fa-lg rating-star checked"></span>
+               <span class="fa fa-star-o fa-lg rating-star checked"></span>
+               <span class="fa fa-star-o fa-lg rating-star checked"></span>
+               <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        </p>
+        <p>Responsiveness: Is the vendor responsive to the needs of the patients, physicians and hospital? 
+          (10 highest score) -<span class="fa fa-star-o fa-lg rating-star checked"></span>
+          <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        </p>
+        <p>Professionalism: Does the representative engage you in a courteous and professional manner? 
+          (10 highest score) -<span class="fa fa-star-o fa-lg rating-star checked"></span>
+          <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        </p>
+        <p>Product and/or Service Knowledge: Does the representative demonstrate knowledge of the product 
+          and/or service for which they are representing? (10 highest score) -
+          <span class="fa fa-star-o fa-lg rating-star checked"></span>
+          <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        </p>
+        <p>Compliance: Does the representative adhere to the Policies and Procedures set forth by the health 
+          system? (10 highest score) (the one without cell phone use and radiation safety) -
+          <span class="fa fa-star-o fa-lg rating-star checked"></span>
+          <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        </p>
+        <p>Professionalism: For appointments does the representative arrive on time? (10 highest score) -
+          <span class="fa fa-star-o fa-lg rating-star checked"></span>
+          <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+              <span class="fa fa-star-o fa-lg rating-star checked"></span>
+        </p>
+  </div>
+</div></div>
+    <footer class="py-2 mt-2 text-white">
+      <div class="container text-center">
+        <small>For the Privacy Terms, © 2020 Global Healthcare Exchange, LLC. All rights reserved. |
+          <a class="mx-3" href="#">Terms of use</a> | <a class="mx-3" href="#">Privacy Policy</a> | 
+          <a class="mx-3" href="#">Customer care</a> 
+        </small>
+      </div>
+    </footer>
+    

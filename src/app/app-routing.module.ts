@@ -9,6 +9,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReplistComponent } from './replist/replist.component';
 import { ReportsComponent } from './reports/reports.component';
 import { BadginghistoryComponent } from './badginghistory/badginghistory.component';
+import { AppoinmentsComponent } from './appoinments/appoinments.component';
+import { SigninarepComponent } from './signinarep/signinarep.component';
+import { ResourcecenterComponent } from './resourcecenter/resourcecenter.component';
 const routes: Routes = [
   {
     path: 'index',
@@ -50,6 +53,18 @@ const routes: Routes = [
   {
     path:'badge',
     component:BadginghistoryComponent
+  },
+  {
+    path:'appoinments',
+    component:AppoinmentsComponent
+  },
+  {
+    path:'signinarep',
+    component:SigninarepComponent
+  },
+  {
+    path:'resourcecenter',
+    component:ResourcecenterComponent
   }
 ];
 

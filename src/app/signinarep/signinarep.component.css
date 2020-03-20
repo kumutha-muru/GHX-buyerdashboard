@@ -1,0 +1,11 @@
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    content: "\f067"; 
+}
+.m{
+margin-left:310px;
+}
